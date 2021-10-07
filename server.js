@@ -46,7 +46,7 @@ function filterById(id) {
   return result
 }
 
-function writePodToDb(dataToBeSaved) {
+function writePodcastToDb(dataToBeSaved) {
   try {
     return fsPromises.writeFile(dbFileName, JSON.stringify(dataToBeSaved))
   } catch (err) {
@@ -56,14 +56,14 @@ function writePodToDb(dataToBeSaved) {
 
 async function deletePodcast(id) {
   const updatedData=data.filter((podcast)=>podcast.id!== id)
-  await writePodToDb(updatedData)
+  await writePodcastToDb(updatedData)
   data=updatedData
 }
 
 async function addNewPodcast(podcast) {
   const updatedData=data
   updatedData.push(podcast)
-  await writePodToDb(updatedData)
+  await writePodcastToDb(updatedData)
   data=updatedData
 }
 
@@ -72,7 +72,7 @@ async function updatePodcast(updatedPodcast) {
   podcastToUpdate={...podcastToUpdate, ...updatedPodcast}
   const updatedPodcasts=data.filter((podcast)=>podcast.id!==podcastToUpdate.id)
   updatedPodcasts.push(podcastToUpdate)
-  await writePodToDb(updatedPodcasts)
+  await writePodcastToDb(updatedPodcasts)
   data=updatedPodcasts
 }
 
