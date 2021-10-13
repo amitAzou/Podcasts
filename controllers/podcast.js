@@ -9,17 +9,17 @@ const getPodcast = async (req, res) => {
   }
 }
 
-const addPodcast = async (req, res) => {
+const addPodcast = async (req, res, next) => {
   try {
     const id = getIdNumber()
     await addNewPodcast({ ...req.body, ...{ id } })
     res.status(200).send('The podcast has been added')
   } catch (err) {
-    res.status(501).send('Something went wrong, could not save podcast')
+    return next(err)
   }
 }
 
-const updatePodcast = async (req, res) => {
+const updatePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
     const result = getItem(id)
@@ -30,11 +30,11 @@ const updatePodcast = async (req, res) => {
       return res.status(200).send('The podcast has been updated successfully')
     }
   } catch (err) {
-    return res.status(501).send('Something went wrong, could not update podcast')
+    return next(err)
   }
 }
 
-const deletePodcast = async (req, res) => {
+const deletePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
     const result = getItem(id)
@@ -45,7 +45,7 @@ const deletePodcast = async (req, res) => {
       return res.status(200).send('The podcast has been deleted successfully')
     }
   } catch (err) {
-    return res.status(501).send('Something went wrong, could not delete podcast')
+    return next(err)
   }
 }
 

@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.listen(config.port)
 
-const routes = require('../Podcasts/routes/podcast')
+const routes = require('./routes')
 
 console.log(`listening on port ${config.port}...`)
 
