@@ -12,19 +12,19 @@ const getPodcastFromDataBase = (id) => {
   return result
 }
 
-const getSortedData = () => {
+const getSortedDataFromDataBase = () => {
   const data = require(filePath)
   return data.sort((a, b) => b.id - a.id)
 }
 
-const savePodcast = (dataToBeSaved) => {
+const savePodcastToDataBase = (dataToBeSaved) => {
   return fsPromises.writeFile(filePath, JSON.stringify(dataToBeSaved))
 }
 
-const addPodcast = async (podcast) => {
+const addPodcastToDataBase = async (podcast) => {
   const data = require(filePath)
   data.push(podcast)
-  return savePodcast(data)
+  return savePodcastToDataBase(data)
 }
 
 const updateDataBase = async (updatedPodcast, id) => {
@@ -32,20 +32,20 @@ const updateDataBase = async (updatedPodcast, id) => {
   const data = require(filePath)
   const index = data.findIndex((podcast) => podcast.id === id)
   data[index] = { ...data[index], ...updatedPodcast }
-  return savePodcast(data)
+  return savePodcastToDataBase(data)
 }
 
 const deleteFromDataBase = async (id) => {
   const data = require(filePath)
   const updatedData = data.filter((podcast) => podcast.id !== id)
-  return savePodcast(updatedData)
+  return savePodcastToDataBase(updatedData)
 }
 
 module.exports = {
   getPodcastFromDataBase,
-  savePodcast,
-  getSortedData,
-  addPodcast,
+  savePodcastToDataBase,
+  getSortedDataFromDataBase,
+  addPodcastToDataBase,
   updateDataBase,
   deleteFromDataBase
 }
