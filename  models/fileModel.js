@@ -28,7 +28,6 @@ const addPodcastToDataBase = async (podcast) => {
 }
 
 const updateDataBase = async (updatedPodcast, id) => {
-  console.log(updatedPodcast)
   const data = require(filePath)
   const index = data.findIndex((podcast) => podcast.id === id)
   data[index] = { ...data[index], ...updatedPodcast }

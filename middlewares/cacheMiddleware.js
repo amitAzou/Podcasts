@@ -8,9 +8,6 @@ const isExpired = (item) => {
 }
 
 const saveToCache = (key, value) => {
-  if (cache.get(key)) {
-    cache.delete(key)
-  }
   cache.set(key, { value: value, timeAdded: Date.now() })
 }
 
