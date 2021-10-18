@@ -1,35 +1,35 @@
 const config = require('config')
-const { getItem } = require('../services/podcast')
 const cache = new Map()
 const cacheExpiration = 200000
 
-const clearCache = (timeStamp) => {
-  cache.forEach((value, key, map) => {
-    if (timeStamp - value.timeAdded > cacheExpiration) {
-      map.delete(key)
-    }
-  })
+const isExpired = (item) => {
+  const timeStamp = Date.now()
+  return timeStamp - item.timeAdded > cacheExpiration
+}
+
+const saveToCache = (key, value) => {
+  if (cache.get(key)) {
+    cache.delete(key)
+  }
+  cache.set(key, { value: value, timeAdded: Date.now() })
 }
 
 const getItemFromCache = (req, res, next) => {
-  if (config.isCacheEnabled) {
-    clearCache(Date.now())
-    const id = parseInt(req.params.id)
-    const result = cache.get(id)
-    if (result) {
-      return res.status(200).send(result.podcast)
+  if (config.isCacheEnabled && req.method === 'GET') {
+    const key = req.url
+    const result = cache.get(key)
+    if (result && !isExpired(result)) {
+      return res.status(200).send(result.value)
     } else {
-      const result = getItem(id)
-      if (!result) {
-        return res.status(404).send('This podcast does not exist')
-      } else {
-        cache.set(id, { podcast: result, timeAdded: Date.now() })
-        return res.status(200).send(result)
+      const sendResponse = res.send
+      res.send = (body) => {
+        saveToCache(req.url, body)
+        res.send = sendResponse
+        res.send(body)
       }
     }
-  } else {
-    next()
   }
+  next()
 }
 
 module.exports = { getItemFromCache }
