@@ -1,14 +1,13 @@
 const express = require('express')
-const app = express()
+const routes = require('./routes/index.js')
+const { getItemFromCache } = require('./middlewares/cacheMiddleware')
 const config = require('config')
 const bodyParser = require('body-parser')
-app.use(bodyParser.json())
+const app = express()
 app.listen(config.port)
-
-const routes = require('./routes')
-
 console.log(`listening on port ${config.port}...`)
-
+app.use(bodyParser.json())
+app.use(getItemFromCache)
 app.use(routes)
 
 module.exports = app

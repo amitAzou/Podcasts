@@ -1,11 +1,15 @@
 const { getItem, getIdNumber, addNewPodcast, updateData, deleteData } = require('../services/podcast')
 
-const getPodcast = async (req, res) => {
-  const result = getItem(parseInt(req.params.id))
-  if (!result) {
-    res.status(404).send('This podcast does not exist')
-  } else {
-    res.status(200).send(result)
+const getPodcast = async (req, res, next) => {
+  try {
+    const result = getItem(parseInt(req.params.id))
+    if (!result) {
+      res.status(404).send('This podcast does not exist')
+    } else {
+      res.status(200).send(result)
+    }
+  } catch (err) {
+    return next(err)
   }
 }
 
