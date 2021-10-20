@@ -2,6 +2,6 @@
   "host": "localhost",
   "port": 3000,
   "dbName": "podcasts",
-  "filePath" : "data/podcast.json",
+  "filePath" : "data/podcasts.json",
   "isCacheEnabled": false
 }
