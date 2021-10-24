@@ -1,4 +1,7 @@
-const { getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase } = require('../ models/fileModel')
+const {
+  getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase,
+  getBestPodcastsFromDataBase
+} = require('../ models/fileModel')
 
 const getItem = (id) => {
   return getPodcastFromDataBase(id)
@@ -25,11 +28,15 @@ const searchItem = async (query) => {
   return searchPodcastInDataBase(query)
 }
 
+const getBestItems = async (number) => {
+  return getBestPodcastsFromDataBase(number)
+}
 module.exports = {
   getItem,
   getIdNumber,
   addNewPodcast,
   updateData,
   deleteData,
-  searchItem
+  searchItem,
+  getBestItems
 }

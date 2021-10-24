@@ -1,5 +1,5 @@
 const fileModel = require('../../../ models/fileModel')
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem } = require('../../../services/podcast')
+const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../../../services/podcast')
 jest.mock('../../../ models/fileModel')
 
 describe('Unit Tests', () => {
@@ -37,6 +37,12 @@ describe('Unit Tests', () => {
     it('It should call the function searchPodcastInDataBase when searchItem is called', async () => {
       const spy = jest.spyOn(fileModel, 'searchPodcastInDataBase').mockImplementation(() => Promise.resolve())
       await searchItem('test')
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('It should call the function getBestPodcastsFromDataBase when getBestItems is called', async () => {
+      const spy = jest.spyOn(fileModel, 'getBestPodcastsFromDataBase').mockImplementation(() => Promise.resolve())
+      await getBestItems('1')
       expect(spy).toHaveBeenCalled()
     })
   })

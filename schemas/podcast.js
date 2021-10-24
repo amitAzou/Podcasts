@@ -4,7 +4,8 @@ const urlSchema =
      joi.object().keys(
        {
          id: joi.number().integer(),
-         query: joi.string()
+         query: joi.string(),
+         number: joi.number().integer()
        }
      )
 
