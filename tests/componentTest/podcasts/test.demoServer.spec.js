@@ -8,7 +8,8 @@ jest.mock('../../../ models/fileModel', () => ({
   getSortedDataFromDataBase: () => [],
   addPodcastToDataBase: () => 'Added!',
   updateDataBase: (podcast, id) => id === 1 ? [] : null,
-  deleteFromDataBase: (id) => id === 1 ? [] : null
+  deleteFromDataBase: (id) => id === 1 ? [] : null,
+  searchPodcastInDataBase: (query) => query === 'test' ? [1] : []
 }))
 
 describe('Component Tests:', () => {
@@ -76,6 +77,16 @@ describe('Component Tests:', () => {
     it('it should return 404 when update podcast is called with an id that does not exist' +
         'in DB', async () => {
       await supertest(app).delete('/podcast/2').expect(404)
+    })
+  })
+
+  describe('Search podcast tests:', () => {
+    it('It should return 400 when GET request is called with a un-existing keyword of title or author', async () => {
+      await supertest(app).get('/podcast/search/badTest').expect(404)
+    })
+
+    it('It should return 200 when GET podcast is called with existing keyword in title or author', async () => {
+      await supertest(app).get('/podcast/search/test').expect(200)
     })
   })
 })

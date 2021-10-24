@@ -1,9 +1,10 @@
 const joi = require('joi')
 
-const idSchema =
-     joi.object(
+const urlSchema =
+     joi.object().keys(
        {
-         id: joi.number().integer().required()
+         id: joi.number().integer(),
+         query: joi.string()
        }
      )
 
@@ -36,4 +37,4 @@ const addSchema = joi.object().keys(
     category: joi.string().required()
   })
 
-module.exports = { addSchema, updateSchema, idSchema }
+module.exports = { addSchema, updateSchema, urlSchema }

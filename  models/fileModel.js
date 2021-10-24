@@ -40,11 +40,17 @@ const deleteFromDataBase = async (id) => {
   return savePodcastToDataBase(updatedData)
 }
 
+const searchPodcastInDataBase = async (query) => {
+  const data = require(filePath)
+  return data.filter((podcast) => podcast.author.toLocaleLowerCase().includes(query) || podcast.title.toLocaleLowerCase().includes(query))
+}
+
 module.exports = {
   getPodcastFromDataBase,
   savePodcastToDataBase,
   getSortedDataFromDataBase,
   addPodcastToDataBase,
   updateDataBase,
-  deleteFromDataBase
+  deleteFromDataBase,
+  searchPodcastInDataBase
 }
