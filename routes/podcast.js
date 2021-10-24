@@ -8,8 +8,8 @@ router.get('/:id', urlParamsSchemeValidator(idSchema), getPodcast)
 
 router.post('/new', requestSchemeValidator(addSchema), addPodcast)
 
-router.delete('/:id', deletePodcast)
+router.delete('/:id', urlParamsSchemeValidator(idSchema), deletePodcast)
 
-router.put('/:id', requestSchemeValidator(updateSchema), updatePodcast)
+router.put('/:id', urlParamsSchemeValidator(idSchema), requestSchemeValidator(updateSchema), updatePodcast)
 
 module.exports = router

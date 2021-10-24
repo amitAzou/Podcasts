@@ -43,7 +43,7 @@ const deletePodcast = async (req, res, next) => {
     const id = parseInt(req.params.id)
     const result = getItem(id)
     if (!result) {
-      return res.status(501).send('This podcast does not exist')
+      return res.status(404).send('This podcast does not exist')
     } else {
       await deleteData(id)
       return res.status(200).send('The podcast has been deleted successfully')
