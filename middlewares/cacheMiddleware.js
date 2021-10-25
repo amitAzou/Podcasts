@@ -20,7 +20,7 @@ const getItemFromCache = (req, res, next) => {
     } else {
       const sendResponse = res.send
       res.send = (body) => {
-        saveToCache(req.url, body)
+        saveToCache(key, body)
         res.send = sendResponse
         res.send(body)
       }

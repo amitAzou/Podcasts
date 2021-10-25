@@ -1,4 +1,4 @@
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData } = require('../services/podcast')
+const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem } = require('../services/podcast')
 
 const getPodcast = async (req, res, next) => {
   try {
@@ -53,9 +53,24 @@ const deletePodcast = async (req, res, next) => {
   }
 }
 
+const searchPodcast = async (req, res, next) => {
+  try {
+    const query = req.params.query.toLowerCase()
+    const result = await searchItem(query)
+    if (result.length === 0) {
+      return res.status(404).send('There are no podcasts containing these keywords')
+    } else {
+      return res.status(200).send(result)
+    }
+  } catch (err) {
+    return next(err)
+  }
+}
+
 module.exports = {
   getPodcast,
   addPodcast,
   updatePodcast,
-  deletePodcast
+  deletePodcast,
+  searchPodcast
 }

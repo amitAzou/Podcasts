@@ -1,5 +1,5 @@
 const fileModel = require('../../../ models/fileModel')
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData } = require('../../../services/podcast')
+const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem } = require('../../../services/podcast')
 jest.mock('../../../ models/fileModel')
 
 describe('Unit Tests', () => {
@@ -31,6 +31,12 @@ describe('Unit Tests', () => {
     it('It should call the function deleteFromDataBase when deleteData service is called', async () => {
       const spy = jest.spyOn(fileModel, 'deleteFromDataBase').mockImplementation(() => Promise.resolve())
       await deleteData(1)
+      expect(spy).toHaveBeenCalled()
+    })
+
+    it('It should call the function searchPodcastInDataBase when searchItem is called', async () => {
+      const spy = jest.spyOn(fileModel, 'searchPodcastInDataBase').mockImplementation(() => Promise.resolve())
+      await searchItem('test')
       expect(spy).toHaveBeenCalled()
     })
   })
