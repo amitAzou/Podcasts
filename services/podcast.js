@@ -1,7 +1,5 @@
-const {
-  getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase,
-  getReviewsArr
-} = require('../ models/podcastFileModel')
+const { getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase } = require('../ models/podcastFileModel')
+const { getReviewsArr } = require('../ models/reviewsFileModel')
 
 const getItem = (id) => {
   return getPodcastFromDataBase(id)
@@ -56,6 +54,7 @@ const getRatingsArr = async (data) => {
   ratingArr.push({ id: data[data.length - 1].podcastId, rating: sum / counter })
   return ratingArr.sort((a, b) => b.rating - a.rating)
 }
+
 module.exports = {
   getItem,
   getIdNumber,

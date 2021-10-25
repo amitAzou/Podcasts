@@ -1,7 +1,15 @@
-const { getReviewsFromDataBase } = require('../ models/podcastFileModel')
+const { getReviewsFromDataBase, addReviewToDataBase } = require('../ models/reviewsFileModel')
+const { getPodcastFromDataBase } = require('../ models/podcastFileModel')
 
 const getItem = async (id) => {
   return getReviewsFromDataBase(id)
 }
 
-module.exports = { getItem }
+const addNewItem = async (podcast) => {
+  return addReviewToDataBase(podcast)
+}
+
+const isItemExisting = (id) => {
+  return getPodcastFromDataBase(id)
+}
+module.exports = { getItem, addNewItem, isItemExisting }
