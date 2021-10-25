@@ -1,7 +1,7 @@
-const fileModel = require('../../../ models/fileModel')
+const fileModel = require('../../../ models/podcastFileModel')
 const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../../../services/podcast')
 const { mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts, resultForBestPodcastCalledWith1, resultForBestPodcastCalledWith2 } = require('./mock')
-jest.mock('../../../ models/fileModel')
+jest.mock('../../../ models/podcastFileModel')
 
 describe('Unit Tests', () => {
   describe('Tests for podcast services', () => {

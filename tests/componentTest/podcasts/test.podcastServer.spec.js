@@ -2,7 +2,7 @@ const supertest = require('supertest')
 const { validObject, missingFieldsObject, extraFieldsObject, wrongFieldTypesObject, mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts } = require('./mock')
 const app = require('../../../app')
 
-jest.mock('../../../ models/fileModel', () => ({
+jest.mock('../../../ models/podcastFileModel', () => ({
   getPodcastFromDataBase: (id) => id === 1 ? [] : null,
   savePodcastToDataBase: () => 'Saved!',
   getSortedDataFromDataBase: () => mockedDataBaseForBestPodcasts,

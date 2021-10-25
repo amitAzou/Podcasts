@@ -1,7 +1,7 @@
 const {
   getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase,
   getReviewsArr
-} = require('../ models/fileModel')
+} = require('../ models/podcastFileModel')
 
 const getItem = (id) => {
   return getPodcastFromDataBase(id)
