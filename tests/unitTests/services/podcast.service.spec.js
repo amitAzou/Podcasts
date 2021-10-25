@@ -1,5 +1,6 @@
 const fileModel = require('../../../ models/fileModel')
 const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../../../services/podcast')
+const { mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts, resultForBestPodcastCalledWith1, resultForBestPodcastCalledWith2 } = require('./mock')
 jest.mock('../../../ models/fileModel')
 
 describe('Unit Tests', () => {
@@ -39,11 +40,28 @@ describe('Unit Tests', () => {
       await searchItem('test')
       expect(spy).toHaveBeenCalled()
     })
-
-    it('It should call the function getBestPodcastsFromDataBase when getBestItems is called', async () => {
-      const spy = jest.spyOn(fileModel, 'getBestPodcastsFromDataBase').mockImplementation(() => Promise.resolve())
+  })
+  describe('Tests for reviews', () => {
+    it('It should call the function getReviewsArr and getSortedDataFromDataBase when getBestItems is called', async () => {
+      const spy1 = jest.spyOn(fileModel, 'getSortedDataFromDataBase').mockImplementation(() => mockedDataBaseForBestPodcasts)
+      const spy2 = jest.spyOn(fileModel, 'getReviewsArr').mockImplementation(() => mockedReviewsForPodcasts)
       await getBestItems('1')
-      expect(spy).toHaveBeenCalled()
+      expect(spy1).toHaveBeenCalled()
+      expect(spy2).toHaveBeenCalled()
+    })
+
+    it('It should get the result: resultForBestPodcastCalledWith1 with a call for the best podcast ', async () => {
+      jest.spyOn(fileModel, 'getSortedDataFromDataBase').mockImplementation(() => mockedDataBaseForBestPodcasts)
+      jest.spyOn(fileModel, 'getReviewsArr').mockImplementation(() => mockedReviewsForPodcasts)
+      const result = await getBestItems('1')
+      expect(result).toStrictEqual(resultForBestPodcastCalledWith1)
+    })
+
+    it('It should get the result: resultForBestPodcastCalledWith2 with a call for two best podcast ', async () => {
+      jest.spyOn(fileModel, 'getSortedDataFromDataBase').mockImplementation(() => mockedDataBaseForBestPodcasts)
+      jest.spyOn(fileModel, 'getReviewsArr').mockImplementation(() => mockedReviewsForPodcasts)
+      const result = await getBestItems('2')
+      expect(result).toStrictEqual(resultForBestPodcastCalledWith2)
     })
   })
 })

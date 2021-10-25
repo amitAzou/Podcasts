@@ -1,6 +1,6 @@
 const {
   getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase,
-  getBestPodcastsFromDataBase
+  getReviewsArr
 } = require('../ models/fileModel')
 
 const getItem = (id) => {
@@ -29,7 +29,32 @@ const searchItem = async (query) => {
 }
 
 const getBestItems = async (number) => {
-  return getBestPodcastsFromDataBase(number)
+  const dataBase = getSortedDataFromDataBase()
+  const reviewsArr = await getReviewsArr()
+  const ratingArr = await getRatingsArr(reviewsArr)
+  const result = []
+  for (let i = 0; i < number && i < ratingArr.length; i++) {
+    result.push(dataBase.find((podcast) => podcast.id === ratingArr[i].id))
+  }
+  return result
+}
+
+const getRatingsArr = async (data) => {
+  let sum = data[0].rating
+  let counter = 1
+  const ratingArr = []
+  for (let i = 1; i < data.length; i++) {
+    if (data[i].podcastId === data[i - 1].podcastId) {
+      sum += data[i].rating
+      counter++
+    } else {
+      ratingArr.push({ id: data[i - 1].podcastId, rating: sum / counter })
+      sum = data[i].rating
+      counter = 1
+    }
+  }
+  ratingArr.push({ id: data[data.length - 1].podcastId, rating: sum / counter })
+  return ratingArr.sort((a, b) => b.rating - a.rating)
 }
 module.exports = {
   getItem,
@@ -38,5 +63,6 @@ module.exports = {
   updateData,
   deleteData,
   searchItem,
-  getBestItems
+  getBestItems,
+  getRatingsArr
 }
