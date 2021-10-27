@@ -1,22 +1,25 @@
 const config = require('config')
-const cache = new Map()
-const cacheExpiration = 200000
+const redis = require('redis')
+const cache = redis.createClient(config.redis)
+cache.connect()
 
-const isExpired = (item) => {
-  const timeStamp = Date.now()
-  return timeStamp - item.timeAdded > cacheExpiration
+cache.on('error', (err) => {
+  console.log(err)
+})
+
+const cacheExpiration = 1200
+
+const saveToCache = async (key, value) => {
+  await cache.set(key, JSON.stringify(value))
+  await cache.expire(key, cacheExpiration)
 }
 
-const saveToCache = (key, value) => {
-  cache.set(key, { value: value, timeAdded: Date.now() })
-}
-
-const getItemFromCache = (req, res, next) => {
+const getItemFromCache = async (req, res, next) => {
   if (config.isCacheEnabled && req.method === 'GET') {
     const key = req.url
-    const result = cache.get(key)
-    if (result && !isExpired(result)) {
-      return res.status(200).send(result.value)
+    const result = await cache.get(key)
+    if (result) {
+      return res.status(200).send(JSON.parse(result))
     } else {
       const sendResponse = res.send
       res.send = (body) => {

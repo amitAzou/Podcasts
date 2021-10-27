@@ -4,5 +4,9 @@
       "dbName": "podcasts",
       "filePath" : "data/podcasts.json",
       "reviewsPath": "data/reviews.json",
-      "isCacheEnabled": true
+      "isCacheEnabled": true,
+      "redis": {
+            "host": "localhost",
+            "port": 6379
+      }
 }
