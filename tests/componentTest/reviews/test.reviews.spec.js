@@ -13,7 +13,7 @@ jest.mock('../../../ models/podcastFileModel', () => ({
 describe('Component Tests:', () => {
   describe('Getting a podcast review test', () => {
     it('It should return 200 when GET request is called with an id in that has reviews in reviews DB', async () => {
-      await supertest(app).get('/reviews/get-by-podcast/1').expect(200)
+      await supertest(app).get('/reviews/get-by-podcast/1').expect(200, [])
     })
 
     it('It should return 400 when POST request is called with a wrong id type', async () => {
