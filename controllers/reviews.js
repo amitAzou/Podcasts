@@ -1,4 +1,4 @@
-const { getItem, addNewItem, isItemExisting } = require('../services/reviews')
+const { getItem, addNewItem, isItemExisting, getIdNumber } = require('../services/reviews')
 
 const getReviews = async (req, res, next) => {
   try {
@@ -19,7 +19,8 @@ const addReview = async (req, res, next) => {
     if (!isExisting) {
       res.status(404).send('Can not add review, podcast does not exist')
     } else {
-      await addNewItem(req.body)
+      const id = getIdNumber()
+      await addNewItem({ ...req.body, ...{ id } })
       res.status(200).send('The review has been added')
     }
   } catch (err) {

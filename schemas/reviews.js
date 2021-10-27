@@ -12,8 +12,7 @@ const addReviewSchema =
       {
         rating: joi.number().integer().min(1).max(10).required(),
         text: joi.string().required(),
-        podcastId: joi.number().integer().required(),
-        id: joi.number().integer().required()
+        podcastId: joi.number().integer().required()
       }
     )
 module.exports = { idSchema, addReviewSchema }

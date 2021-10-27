@@ -11,7 +11,8 @@ jest.mock('../../../ models/podcastFileModel', () => ({
 jest.mock('../../../ models/reviewsFileModel', () => ({
   getReviewsArr: () => mockedReviewsForPodcasts,
   getReviewsFromDataBase: (id) => id === 1 ? [] : null,
-  addReviewToDataBase: () => 'Added'
+  addReviewToDataBase: () => 'Added',
+  getSortedReviewsFromDataBase: () => []
 }))
 
 describe('Component Tests:', () => {

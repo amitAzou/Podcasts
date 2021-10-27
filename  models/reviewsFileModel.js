@@ -17,6 +17,11 @@ const getReviewsFromDataBase = async (id) => {
   return result
 }
 
+const getSortedReviewsFromDataBase = () => {
+  const data = require(reviewsPath)
+  return data.sort((a, b) => b.id - a.id)
+}
+
 const saveReviewsToDataBase = async (dataToBeSaved) => {
   return fsPromises.writeFile(reviewsPath, JSON.stringify(dataToBeSaved))
 }
@@ -30,5 +35,6 @@ const addReviewToDataBase = async (review) => {
 module.exports = {
   getReviewsFromDataBase,
   addReviewToDataBase,
-  getReviewsArr
+  getReviewsArr,
+  getSortedReviewsFromDataBase
 }
