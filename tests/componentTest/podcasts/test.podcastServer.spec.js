@@ -87,7 +87,7 @@ describe('Component Tests:', () => {
     })
 
     it('It should return 200 when search podcast is called with existing keyword in title or author', async () => {
-      await supertest(app).get('/podcast/search/test').expect(200)
+      await supertest(app).get('/podcast/search/test').expect(200, [1])
     })
   })
 
@@ -97,7 +97,7 @@ describe('Component Tests:', () => {
     })
 
     it('It should return 200 when get best podcast is called with a valid number type', async () => {
-      await supertest(app).get('/podcast/best/1').expect(200)
+      await supertest(app).get('/podcast/best/1').expect(200, [mockedDataBaseForBestPodcasts[2]])
     })
   })
 })
