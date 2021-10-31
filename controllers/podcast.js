@@ -1,4 +1,4 @@
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem } = require('../services/podcast')
+const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
 
 const getPodcast = async (req, res, next) => {
   try {
@@ -67,10 +67,25 @@ const searchPodcast = async (req, res, next) => {
   }
 }
 
+const getBestPodcasts = async (req, res, next) => {
+  try {
+    const number = parseInt(req.params.number)
+    const result = await getBestItems(number)
+    if (result.length === 0) {
+      return res.status(404).send('There are no ratings for any podcast')
+    } else {
+      return res.status(200).send(result)
+    }
+  } catch (err) {
+    return next(err)
+  }
+}
+
 module.exports = {
   getPodcast,
   addPodcast,
   updatePodcast,
   deletePodcast,
-  searchPodcast
+  searchPodcast,
+  getBestPodcasts
 }
