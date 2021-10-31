@@ -7,11 +7,9 @@ cache.on('error', (err) => {
   console.log(err)
 })
 
-const cacheExpiration = 1200
-
 const saveToCache = async (key, value) => {
-  await cache.set(key, JSON.stringify(value))
-  await cache.expire(key, cacheExpiration)
+    await cache.set(key, JSON.stringify(value))
+    await cache.expire(key, config.cacheExpiration)
 }
 
 const getItemFromCache = async (req, res, next) => {
