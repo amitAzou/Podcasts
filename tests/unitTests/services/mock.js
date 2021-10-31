@@ -47,32 +47,27 @@ const mockedReviewsForPodcasts = [
   {
     rating: 4,
     text: "Didn't like it that much",
-    podcastId: 1,
-    id: 51
+    podcastId: 1
   },
   {
     rating: 10,
     text: 'super',
-    podcastId: 1,
-    id: 51
+    podcastId: 1
   },
   {
     rating: 9,
     text: 'super',
-    podcastId: 2,
-    id: 51
+    podcastId: 2
   },
   {
     rating: 6,
     text: 'super',
-    podcastId: 2,
-    id: 51
+    podcastId: 2
   },
   {
     rating: 8,
     text: 'super',
-    podcastId: 3,
-    id: 51
+    podcastId: 3
   }
 ]
 
@@ -125,4 +120,5 @@ const resultForBestPodcastCalledWith2 =
         extraField: 'extra'
       }
     ]
+
 module.exports = { mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts, resultForBestPodcastCalledWith1, resultForBestPodcastCalledWith2 }

@@ -9,7 +9,10 @@ jest.mock('../../../ models/podcastFileModel', () => ({
   addPodcastToDataBase: () => 'Added!',
   updateDataBase: (podcast, id) => id === 1 ? [] : null,
   deleteFromDataBase: (id) => id === 1 ? [] : null,
-  searchPodcastInDataBase: (query) => query === 'test' ? [1] : [],
+  searchPodcastInDataBase: (query) => query === 'test' ? [1] : []
+}))
+
+jest.mock('../../../ models/reviewsFileModel', () => ({
   getReviewsArr: () => mockedReviewsForPodcasts
 }))
 

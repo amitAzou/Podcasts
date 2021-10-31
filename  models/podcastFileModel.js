@@ -2,7 +2,6 @@ const fsPromises = require('fs').promises
 const config = require('config')
 const path = require('path')
 const filePath = path.resolve(__dirname, '../', config.filePath)
-const reviewsPath = path.resolve(__dirname, '../', config.reviewsPath)
 
 const getPodcastFromDataBase = (id) => {
   const data = require(filePath)
@@ -46,20 +45,6 @@ const searchPodcastInDataBase = async (query) => {
   return data.filter((podcast) => podcast.author.toLocaleLowerCase().includes(query) || podcast.title.toLocaleLowerCase().includes(query))
 }
 
-const getReviewsArr = async () => {
-  const data = require(reviewsPath)
-  return data.sort((a, b) => a.podcastId - b.podcastId)
-}
-
-const getReviewsFromDataBase = async (id) => {
-  const data = await getReviewsArr()
-  const result = data.filter(review => review.podcastId === id)
-  if (result.length === 0) {
-    return null
-  }
-  return result
-}
-
 module.exports = {
   getPodcastFromDataBase,
   savePodcastToDataBase,
@@ -67,7 +52,5 @@ module.exports = {
   addPodcastToDataBase,
   updateDataBase,
   deleteFromDataBase,
-  searchPodcastInDataBase,
-  getReviewsArr,
-  getReviewsFromDataBase
+  searchPodcastInDataBase
 }

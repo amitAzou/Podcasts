@@ -1,13 +1,18 @@
 const supertest = require('supertest')
 const app = require('../../../app')
+const { validReviewObject, missingFieldsReviewObject, invalidFieldsReviewObject, notExistingPodcast } = require('./mock')
+const { mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts } = require('../podcasts/mock')
 
 jest.mock('../../../ models/podcastFileModel', () => ({
+  getSortedDataFromDataBase: () => mockedDataBaseForBestPodcasts,
+  getPodcastFromDataBase: (id) => id === 1 ? [] : null
+}))
+
+jest.mock('../../../ models/reviewsFileModel', () => ({
+  getReviewsArr: () => mockedReviewsForPodcasts,
   getReviewsFromDataBase: (id) => id === 1 ? [] : null,
-  addPodcastToDataBase: () => 'Added!',
-  updateDataBase: (podcast, id) => id === 1 ? [] : null,
-  deleteFromDataBase: (id) => id === 1 ? [] : null,
-  searchPodcastInDataBase: (query) => query === 'test' ? [1] : [],
-  getReviewsArr: () => []
+  addReviewToDataBase: () => 'Added',
+  getSortedReviewsFromDataBase: () => []
 }))
 
 describe('Component Tests:', () => {
@@ -22,6 +27,24 @@ describe('Component Tests:', () => {
 
     it('It should return 404 when GET request is called with an id that has no reviews in DB', async () => {
       await supertest(app).get('/reviews/get-by-podcast/2').expect(404)
+    })
+  })
+
+  describe('Adding a podcast review test', () => {
+    it('It should return 200 when add review request is called with a valid id for a podcast that exists in DB', async () => {
+      await supertest(app).post('/reviews/new').send(validReviewObject).expect(200)
+    })
+
+    it('It should return 400 when add review request is called with an object with invalid fields type(rating field)', async () => {
+      await supertest(app).post('/reviews/new').send(invalidFieldsReviewObject).expect(400)
+    })
+
+    it('It should return 400 when add review request is called with an object with missing fields', async () => {
+      await supertest(app).post('/reviews/new').send(missingFieldsReviewObject).expect(400)
+    })
+
+    it('It should return 404 when add review request is called with an id that doesnt exist in DB', async () => {
+      await supertest(app).post('/reviews/new').send(notExistingPodcast).expect(404)
     })
   })
 })
