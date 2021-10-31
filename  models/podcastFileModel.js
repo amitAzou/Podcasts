@@ -51,6 +51,15 @@ const getReviewsArr = async () => {
   return data.sort((a, b) => a.podcastId - b.podcastId)
 }
 
+const getReviewsFromDataBase = async (id) => {
+  const data = await getReviewsArr()
+  const result = data.filter(review => review.podcastId === id)
+  if (result.length === 0) {
+    return null
+  }
+  return result
+}
+
 module.exports = {
   getPodcastFromDataBase,
   savePodcastToDataBase,
@@ -59,5 +68,6 @@ module.exports = {
   updateDataBase,
   deleteFromDataBase,
   searchPodcastInDataBase,
-  getReviewsArr
+  getReviewsArr,
+  getReviewsFromDataBase
 }
