@@ -1,8 +1,8 @@
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
+const { getItem, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
 
 const getPodcast = async (req, res, next) => {
   try {
-    const result = getItem(parseInt(req.params.id))
+    const result = await getItem(parseInt(req.params.id))
     if (!result) {
       res.status(404).send('This podcast does not exist')
     } else {
@@ -15,8 +15,7 @@ const getPodcast = async (req, res, next) => {
 
 const addPodcast = async (req, res, next) => {
   try {
-    const id = getIdNumber()
-    await addNewPodcast({ ...req.body, ...{ id } })
+    await addNewPodcast(req.body)
     res.status(200).send('The podcast has been added')
   } catch (err) {
     return next(err)
@@ -26,7 +25,7 @@ const addPodcast = async (req, res, next) => {
 const updatePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
-    const result = getItem(id)
+    const result = await getItem(id)
     if (!result) {
       return res.status(404).send('This podcast does not exist')
     } else {
@@ -41,7 +40,7 @@ const updatePodcast = async (req, res, next) => {
 const deletePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
-    const result = getItem(id)
+    const result = await getItem(id)
     if (!result) {
       return res.status(404).send('This podcast does not exist')
     } else {

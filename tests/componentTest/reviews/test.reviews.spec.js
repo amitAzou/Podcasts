@@ -3,12 +3,12 @@ const app = require('../../../app')
 const { validReviewObject, missingFieldsReviewObject, invalidFieldsReviewObject, notExistingPodcast } = require('./mock')
 const { mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts } = require('../podcasts/mock')
 
-jest.mock('../../../ models/podcastFileModel', () => ({
+jest.mock('../../../ models/podcastDataBaseModel', () => ({
   getSortedDataFromDataBase: () => mockedDataBaseForBestPodcasts,
   getPodcastFromDataBase: (id) => id === 1 ? [] : null
 }))
 
-jest.mock('../../../ models/reviewsFileModel', () => ({
+jest.mock('../../../ models/reviewsDataBaseModel', () => ({
   getReviewsArr: () => mockedReviewsForPodcasts,
   getReviewsFromDataBase: (id) => id === 1 ? [] : null,
   addReviewToDataBase: () => 'Added',

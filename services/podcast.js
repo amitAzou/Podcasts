@@ -1,7 +1,7 @@
-const { getSortedDataFromDataBase, addPodcastToDataBase, getPodcastFromDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase } = require('../ models/podcastFileModel')
-const { getReviewsArr } = require('../ models/reviewsFileModel')
+const { getPodcastFromDataBase, getSortedDataFromDataBase, addPodcastToDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase } = require('../ models/podcastDataBaseModel')
+const { getReviewsArr } = require('../ models/reviewsDataBaseModel')
 
-const getItem = (id) => {
+const getItem = async (id) => {
   return getPodcastFromDataBase(id)
 }
 
