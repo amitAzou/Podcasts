@@ -11,8 +11,14 @@ jest.mock('../../../ models/podcastDataBaseModel', () => ({
 jest.mock('../../../ models/reviewsDataBaseModel', () => ({
   getReviewsArr: () => mockedReviewsForPodcasts,
   getReviewsFromDataBase: (id) => id === 1 ? [] : null,
-  addReviewToDataBase: () => 'Added',
-  getSortedReviewsFromDataBase: () => []
+  getSortedReviewsFromDataBase: () => [],
+  addReviewToDataBase: (review) => {
+    if (review.podcastId === 1) {
+      return []
+    } else {
+      throw new Error('Error')
+    }
+  }
 }))
 
 describe('Component Tests:', () => {
@@ -43,8 +49,8 @@ describe('Component Tests:', () => {
       await supertest(app).post('/reviews/new').send(missingFieldsReviewObject).expect(400)
     })
 
-    it('It should return 404 when add review request is called with an id that doesnt exist in DB', async () => {
-      await supertest(app).post('/reviews/new').send(notExistingPodcast).expect(404)
+    it('It should return 500 when add review request is called with an id that doesnt exist in DB', async () => {
+      await supertest(app).post('/reviews/new').send(notExistingPodcast).expect(500)
     })
   })
 })
