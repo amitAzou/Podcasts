@@ -9,5 +9,11 @@
       "redis": {
             "host": "localhost",
             "port": 6379
+      },
+      "db": {
+            "port": 3306,
+            "host": "localhost",
+            "user": "root",
+            "password": "Anna!010"
       }
 }

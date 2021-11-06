@@ -1,12 +1,12 @@
-const { getItem, getIdNumber, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
+const { getItem, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
 
 const getPodcast = async (req, res, next) => {
   try {
-    const result = getItem(parseInt(req.params.id))
+    const result = await getItem(parseInt(req.params.id))
     if (!result) {
-      res.status(404).send('This podcast does not exist')
+      return res.status(404).send('This podcast does not exist')
     } else {
-      res.status(200).send(result)
+      return res.status(200).send(result)
     }
   } catch (err) {
     return next(err)
@@ -15,9 +15,8 @@ const getPodcast = async (req, res, next) => {
 
 const addPodcast = async (req, res, next) => {
   try {
-    const id = getIdNumber()
-    await addNewPodcast({ ...req.body, ...{ id } })
-    res.status(200).send('The podcast has been added')
+    await addNewPodcast(req.body)
+    return res.status(200).send('The podcast has been added')
   } catch (err) {
     return next(err)
   }
@@ -26,12 +25,11 @@ const addPodcast = async (req, res, next) => {
 const updatePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
-    const result = getItem(id)
-    if (!result) {
-      return res.status(404).send('This podcast does not exist')
-    } else {
-      await updateData(req.body, id)
+    const result = await updateData(req.body, id)
+    if (result.affectedRows !== 0) {
       return res.status(200).send('The podcast has been updated successfully')
+    } else {
+      return res.status(404).send('The podcast does not exist')
     }
   } catch (err) {
     return next(err)
@@ -41,12 +39,11 @@ const updatePodcast = async (req, res, next) => {
 const deletePodcast = async (req, res, next) => {
   try {
     const id = parseInt(req.params.id)
-    const result = getItem(id)
-    if (!result) {
-      return res.status(404).send('This podcast does not exist')
-    } else {
-      await deleteData(id)
+    const result = await deleteData(id)
+    if (result.affectedRows !== 0) {
       return res.status(200).send('The podcast has been deleted successfully')
+    } else {
+      return res.status(404).send('This podcast does not exist')
     }
   } catch (err) {
     return next(err)

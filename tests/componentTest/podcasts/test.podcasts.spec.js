@@ -2,7 +2,7 @@ const supertest = require('supertest')
 const { validObject, missingFieldsObject, extraFieldsObject, wrongFieldTypesObject, mockedDataBaseForBestPodcasts, mockedReviewsForPodcasts } = require('./mock')
 const app = require('../../../app')
 
-jest.mock('../../../ models/podcastFileModel', () => ({
+jest.mock('../../../ models/podcastDataBaseModel', () => ({
   getPodcastFromDataBase: (id) => id === 1 ? [] : null,
   savePodcastToDataBase: () => 'Saved!',
   getSortedDataFromDataBase: () => mockedDataBaseForBestPodcasts,
@@ -12,7 +12,7 @@ jest.mock('../../../ models/podcastFileModel', () => ({
   searchPodcastInDataBase: (query) => query === 'test' ? [1] : []
 }))
 
-jest.mock('../../../ models/reviewsFileModel', () => ({
+jest.mock('../../../ models/reviewsDataBaseModel', () => ({
   getReviewsArr: () => mockedReviewsForPodcasts
 }))
 
@@ -59,9 +59,9 @@ describe('Component Tests:', () => {
       await supertest(app).put('/podcast/1').send(extraFieldsObject).expect(400)
     })
 
-    it('it should return 404 when update podcast is called with an id that does not exist' +
+    it('it should return 500 when update podcast is called with an id that does not exist' +
         'in DB', async () => {
-      await supertest(app).put('/podcast/2').send(validObject).expect(404)
+      await supertest(app).put('/podcast/2').send(validObject).expect(500)
     })
 
     it('It should return 400 when POST request is called with extra fields', async () => {
@@ -78,9 +78,9 @@ describe('Component Tests:', () => {
       await supertest(app).delete('/podcast/1').expect(200)
     })
 
-    it('it should return 404 when update podcast is called with an id that does not exist' +
+    it('it should return 500 when update podcast is called with an id that does not exist' +
         'in DB', async () => {
-      await supertest(app).delete('/podcast/2').expect(404)
+      await supertest(app).delete('/podcast/2').expect(500)
     })
   })
 

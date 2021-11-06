@@ -4,9 +4,16 @@
   "dbName": "podcasts",
   "filePath" : "data/podcasts.json",
   "reviewsPath": "data/reviews.json",
+  "cacheExpiration": 1200,
   "isCacheEnabled": false,
   "redis": {
     "host": "localhost",
     "port": 6379
+  },
+  "db": {
+    "port": 3306,
+    "host": "localhost",
+    "user": "root",
+    "password": "Anna!010"
   }
 }

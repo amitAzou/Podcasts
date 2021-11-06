@@ -8,8 +8,8 @@ cache.on('error', (err) => {
 })
 
 const saveToCache = async (key, value) => {
-    await cache.set(key, JSON.stringify(value))
-    await cache.expire(key, config.cacheExpiration)
+  await cache.set(key, JSON.stringify(value))
+  await cache.expire(key, config.cacheExpiration)
 }
 
 const getItemFromCache = async (req, res, next) => {
