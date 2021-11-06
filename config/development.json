@@ -15,5 +15,11 @@
             "host": "localhost",
             "user": "root",
             "password": "Anna!010"
+      },
+      "authentication": {
+            "isAuthenticationEnabled": true,
+            "secret": "Auth-Secret",
+            "loginUrl": "/login"
       }
+
 }
