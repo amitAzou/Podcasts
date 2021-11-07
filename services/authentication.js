@@ -1,7 +1,24 @@
 const { authenticateUser } = require('../ models/authenticationModel')
+const jwt = require('jsonwebtoken')
+const config = require('config')
 
-const authenticationService = async (username, password) => {
-  return await authenticateUser(username, password)
+const authenticate = async (username, password) => {
+  const authenticationStatus = await authenticateUser(username, password)
+  if (authenticationStatus.length === 0) {
+    return null
+  } else {
+    const user = { name: username, exp: Math.floor(Date.now() / 1000) + (60 * 60) }
+    return jwt.sign(user, config.authentication.secret)
+  }
 }
 
-module.exports = { authenticationService }
+const verifyToken = async (token) => {
+  jwt.verify(token, config.authentication.secret, (err) => {
+    if (err) {
+      return false
+    }
+  })
+  return true
+}
+
+module.exports = { authenticate, verifyToken }
