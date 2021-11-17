@@ -1,0 +1,253 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    justify-content: space-around;
+}
+
+.upper_row {
+    order:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.site_logo {
+    order:1;
+    flex:1;
+    position: relative;
+    height: 100px;
+}
+
+
+.headline {
+    order:2;
+    flex: 7;
+    font-family: Papyrus, sans-serif;
+    display: inline;
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 50px;
+}
+
+.mic_logo {
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.navigation {
+    flex:1;
+    order:3;
+    position: relative;
+    height: 110px;
+    left:100px;
+}
+
+.drop_down {
+    position: relative;
+}
+
+.drop_down ul {
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top:10px;
+    padding-left: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.drop_down a {
+    color: white;
+    text-decoration: none;
+}
+
+.drop_down li {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_down li:hover {
+    background-color: #939393;
+}
+
+.drop_down button {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.drop_down button:hover {
+    background: #939393;
+}
+
+.drop_down button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.arrow {
+    width: 0;
+    height:0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    margin: 2px;
+}
+
+.second_row {
+    order:2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.searchInput {
+    height: 50px;
+    width:50%;
+    border: 1px solid #242c37;
+    border-radius: 999px;
+}
+
+.searchInput:hover {
+    background-color: white;
+}
+
+.third_row {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+    text-align: center;
+}
+
+.top_podcast_title {
+    position: relative;
+    font-family: Papyrus, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.addPodcast {
+    width: 120px;
+    align-self: flex-end;
+    border-radius: 10px;
+    background-color: #000102;
+    color: white;
+}
+
+.add:after {
+    content: ' \002B';
+}
+
+.top_podcasts {
+    position: relative;
+    font-family: "Helvetica Neue", Halvetica, sans-serif;
+    color: #eb9d38;
+    height:570px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px 10px #1f2228;
+    display: flex;
+}
+
+.podcast_list {
+    position: relative;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    text-align: left;
+    justify-content: normal;
+    flex-wrap: wrap
+}
+
+.podcast_list li a, li img {
+    margin: 20px 0 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.podcast_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.pod_logo {
+    order:1;
+    height: 80px;
+}
+
+.pod_text {
+    order:2;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090909;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.bottom_row {
+    display: flex;
+    order:4;
+    justify-content: center;
+}
+.copy_right {
+    display: inline;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    top: 50px;
+    color: white;
+}

@@ -5,14 +5,15 @@ body {
 
 .registration_box {
     display: flex;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", Halvetica, sans-serif;
 }
 
 .register {
     margin: 0 auto;
     box-shadow: 0 0 250px #000;
     text-align: center;
-    padding: 4rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .site_logo {
@@ -47,6 +48,7 @@ input {
     text-align: center;
     width: 100%;
     height: 50px;
+    outline: none;
 }
 
 input.email {
@@ -59,9 +61,15 @@ input.submit {
     background-image: linear-gradient(160deg,#eb9d31 100%, #fff 0%);
     color: #fff;
     margin-bottom: 6rem;
-
 }
 
+.email:hover, .password:hover {
+    background-color: white;
+}
+
+.submit:hover {
+    border: none;
+}
 a {
     color: white;
 }
