@@ -1,6 +1,10 @@
 body {
     background-color: #354152;
     color: #5e7291;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
 }
 
 .registration_box {
@@ -9,7 +13,7 @@ body {
 }
 
 .register {
-    margin: 0 auto;
+    margin: 50px auto;
     box-shadow: 0 0 250px #000;
     text-align: center;
     padding-top: 2rem;
@@ -61,6 +65,7 @@ input.submit {
     background-image: linear-gradient(160deg,#eb9d31 100%, #fff 0%);
     color: #fff;
     margin-bottom: 6rem;
+    cursor: pointer;
 }
 
 .email:hover, .password:hover {
@@ -74,4 +79,9 @@ a {
     color: white;
 }
 
+.bottom_row {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
 

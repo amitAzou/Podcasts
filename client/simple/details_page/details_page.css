@@ -2,22 +2,21 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1e1e1e;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
 }
 
 .top_row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
+
 }
 
 .navigation {
-    flex:1;
     order:3;
     position: relative;
     height: 110px;
-    left:100px;
 }
 
 .drop_down {
@@ -100,73 +99,144 @@ body {
 
 .title {
     order:2;
-    flex:7;
     display: inline;
     position: relative;
     align-self: center;
     text-align: center;
     color: white;
     font-size:36px;
-    left: 50px;
 }
 
+.box_layout {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 .form_box {
+    margin-top: 50px;
+    margin-left: 20px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     align-self: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #004444;
+    padding: 2rem;
+    background-color: black;
     height: 600px;
     width: 600px;
     border-radius: 10px;
-    box-shadow: 0 0 250px #004444;
+    box-shadow: 0 0 20px gray;
 }
 
+.box_details {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+}
 
-.pod_info {
+/* Podcast Details*/
+
+.elements {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    text-overflow: ellipsis;
+    text-align: left;
+    right:200px;
+    justify-content: space-between;
 }
 
-.params {
-    order:1;
+.single_element {
+    margin-bottom:30px;
+}
+
+.edit_podcast {
     position: relative;
-    align-self: center;
-    text-align: center;
-}
-
-.params input {
-    background: none;
+    top:300px;
     border: 2px solid black;
-    border-radius: 5px;
+    background: #eb9d31;
+    cursor: pointer;
+    height:30px;
     color: white;
-    font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
-    margin: 15px;
-    font-size: 18px;
-}
-
-.submit {
-    position: relative;
-    order:2;
-    background-image: linear-gradient(160deg, #020202 100%, #fff 0%);
-    color: #fff;
     border-radius: 5px;
-    align-self: center;
-    width:25%;
-    margin: 5px;
-    border: 2px solid black;
-    font-size: 18px;
+    cursor: pointer;
 }
 
-input {
-    text-align: center;
+.edit_podcast:hover {
+    background-color: #7f7f7f;
+    border:2px solid white;
+}
+
+/* Reviews Box*/
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews_top_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.podcast_title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.add_button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #0e63a1;
+    left: 265px;
+    bottom:30px;
+}
+
+.add_button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0e63a1;
+    height: 50%;
+    width: 4px;
+}
+
+.add_button:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
     width: 50%;
+    background: #0e63a1;
+    top: 50%;
+    left: 50%;
+}
+
+.add_review {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the add review text */
+    position: absolute;
+    z-index: 1;
+}
+
+.add_button:hover .add_review {
+    visibility: visible;
 }
 
