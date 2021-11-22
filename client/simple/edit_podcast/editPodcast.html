@@ -5,6 +5,7 @@
     <title>Pod-Space</title>
     <link rel="stylesheet" href="./editPodcast.css">
     <link rel="icon" href="../sources/favicon.ico">
+    <script src="../pureJs/editPodcast.js"></script>
 </head>
 <body>
 <div class="top_row">
@@ -25,27 +26,28 @@
 <div class="form_box">
 
 
-    <form action="../login_page/loginPage.html" class="pod_info">
+    <div class="pod_info">
         <div class="delete_pos">
             <button class="delete"><span class="delete_text">Delete Podcast</span></button>
         </div>
         <div class="params">
-            <input type="text" placeholder="Title">
-            <input type="text" placeholder="Description">
-            <input type="text" placeholder="Html Description">
-            <input type="text" placeholder="Web Url">
-            <input type="text" placeholder="Image Url">
-            <input type="text" placeholder="Language">
-            <input type="number" placeholder="Number Of Episodes">
-            <input type="number" placeholder="Avg Episode Length">
-            <input type="text" placeholder="Author">
-            <input type="text" placeholder="Category">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="description" placeholder="Description">
+            <input type="text" id="html" placeholder="Html Description">
+            <input type="text" id="web" placeholder="Web Url">
+            <input type="text" id="image" placeholder="Image Url">
+            <input type="text" id="lang" placeholder="Language">
+            <input type="number" id="epNum" placeholder="Number Of Episodes">
+            <input type="number" id="epAvg" placeholder="Avg Episode Length">
+            <input type="text" id="author" placeholder="Author">
+            <input type="text" id="category" placeholder="Category">
         </div>
         <div class="action">
-            <input class="submit" type="submit" value="Submit">
+            <button onclick="editPodcast()" class="submit">Submit</button>
         </div>
-    </form>
+    </div>
 </div>
+
 
 </body>
 </html>

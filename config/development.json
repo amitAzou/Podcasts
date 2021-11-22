@@ -6,6 +6,7 @@
       "reviewsPath": "data/reviews.json",
       "cacheExpiration": 1200,
       "isCacheEnabled": true,
+      "static": "simple",
       "redis": {
             "host": "localhost",
             "port": 6379

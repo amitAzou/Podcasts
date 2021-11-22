@@ -5,11 +5,7 @@ const getReviewsArr = async () => {
 }
 
 const getReviewsFromDataBase = async (id) => {
-  const result = await mysql.runQuery('SELECT * FROM `podcasts`.`reviews` WHERE podcastId=?', [id])
-  if (result.length === 0) {
-    return null
-  }
-  return result
+  return await mysql.runQuery('SELECT * FROM `podcasts`.`reviews` WHERE podcastId=?', [id])
 }
 
 const addReviewToDataBase = async (review) => {
