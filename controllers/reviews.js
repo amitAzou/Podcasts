@@ -4,7 +4,7 @@ const getReviews = async (req, res, next) => {
   try {
     const result = await getItem(parseInt(req.params.id))
     if (!result) {
-      return res.status(404).send('There are no reviews for this podcast')
+      return res.status(200).send('There are no reviews for this podcast')
     } else {
       return res.status(200).send(result)
     }

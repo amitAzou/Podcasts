@@ -1,0 +1,320 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.upper_row {
+    order:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site_logo {
+    order:1;
+    position: relative;
+    height: 100px;
+}
+
+
+.headline {
+    order:2;
+    flex:7;
+    font-family: Monaco, sans-serif;
+    display: inline;
+    text-align: center;
+    color: white;
+    position: relative;
+    left:75px;
+}
+
+.mic_logo {
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.navigation {
+    flex:1;
+    order:3;
+    position: relative;
+    height: 110px;
+    left:100px;
+}
+
+.drop_down {
+    position: relative;
+}
+
+.drop_down ul {
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top:10px;
+    padding-left: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.drop_down a {
+    color: white;
+    text-decoration: none;
+}
+
+.drop_down li {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_down li:hover {
+    background-color: #939393;
+}
+
+.drop_down button {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.drop_down button:hover {
+    background: #939393;
+}
+
+.drop_down button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.arrow {
+    width: 0;
+    height:0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    margin: 2px;
+}
+
+.second_row {
+    order:2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+
+.searchInput {
+    height: 50px;
+    width:50%;
+    border: 3px solid #313d52;
+    border-radius: 999px;
+    background-color: transparent;
+    color:white;
+
+}
+
+.searchInput::placeholder {
+    color:white;
+}
+
+.searchInput:hover {
+    background-color: #939393;
+    color: black;
+}
+
+
+.third_row {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+    text-align: center;
+}
+
+.top_podcast_title {
+    position: relative;
+    font-family: Monaco, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.add_button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid black;
+
+    bottom: 20px;
+    align-self: end;
+}
+
+.add_button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1b3044;
+    height: 50%;
+    width: 4px;
+}
+
+.add_button:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #1b3044;
+    top: 50%;
+    left: 50%;
+}
+
+.add {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the add review text */
+    position: absolute;
+    right:35px;
+    top:5px;
+}
+
+.add_button:hover .add {
+    visibility: visible;
+}
+
+.top_podcasts {
+    position: relative;
+    font-family: "Helvetica Neue", Halvetica, sans-serif;
+    color: #eb9d38;
+    height:550px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    display: flex;
+}
+
+.podcast_list {
+    position: relative;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.podcast_list li a, li img {
+    text-decoration: none;
+    color: white;
+}
+
+.podcast_item {
+    margin:10px 50px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    height:300px;
+    width:200px;
+    cursor: pointer;
+}
+
+.podcast_item:hover {
+    transform: scale(1.3);
+}
+
+.podcast_item:hover .pod_text {
+    overflow: visible;
+}
+
+.pod_logo {
+    order:1;
+    height: 200px;
+    width:200px;
+}
+
+.pod_text {
+    order:2;
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090909;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.bottom_row {
+    display: flex;
+    order:4;
+    justify-content: center;
+}
+.copy_right {
+    display: inline;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    top: 50px;
+    color: white;
+}

@@ -1,0 +1,242 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.top_row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.navigation {
+    order:3;
+    position: relative;
+    height: 110px;
+}
+
+.drop_down {
+    position: relative;
+}
+
+.drop_down ul {
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top:10px;
+    padding-left: 0;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.drop_down a {
+    color: white;
+    text-decoration: none;
+}
+
+.drop_down li {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_down li:hover {
+    background-color: #939393;
+}
+
+.drop_down button {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.drop_down button:hover {
+    background: #939393;
+}
+
+.drop_down button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.arrow {
+    width: 0;
+    height:0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+    margin: 2px;
+}
+
+.site_logo {
+    order:1;
+    height: 100px;
+    position: relative;
+}
+
+.title {
+    order:2;
+    display: inline;
+    position: relative;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size:36px;
+}
+
+.box_layout {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form_box {
+    margin-top: 50px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    padding: 2rem;
+    background-color: black;
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px gray;
+}
+
+.box_details {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+}
+
+/* Podcast Details*/
+
+.elements {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    text-align: left;
+    right:200px;
+    justify-content: space-between;
+}
+
+.single_element {
+    margin-bottom:30px;
+}
+
+.edit_podcast {
+    position: relative;
+    top:300px;
+    border: 2px solid black;
+    background: #eb9d31;
+    cursor: pointer;
+    height:30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit_podcast:hover {
+    background-color: #7f7f7f;
+    border:2px solid white;
+}
+
+/* Reviews Box*/
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews_top_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.podcast_title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.add_button {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #0e63a1;
+    left: 265px;
+    bottom:30px;
+}
+
+.add_button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0e63a1;
+    height: 50%;
+    width: 4px;
+}
+
+.add_button:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #0e63a1;
+    top: 50%;
+    left: 50%;
+}
+
+.add_review {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the add review text */
+    position: absolute;
+    z-index: 1;
+}
+
+.add_button:hover .add_review {
+    visibility: visible;
+}
+
