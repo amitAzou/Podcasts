@@ -24,16 +24,14 @@
     </nav>
 </div>
 <div class="form_box">
-
-
     <div class="pod_info">
         <div class="delete_pos">
             <button class="delete"><span class="delete_text">Delete Podcast</span></button>
         </div>
         <div class="params">
             <input type="text" id="title" placeholder="Title">
-            <input type="text" id="description" placeholder="Description">
-            <input type="text" id="html" placeholder="Html Description">
+            <textarea id="description" placeholder="Description"></textarea>
+            <textarea type="text" id="html" placeholder="Html Description"></textarea>
             <input type="text" id="web" placeholder="Web Url">
             <input type="text" id="image" placeholder="Image Url">
             <input type="text" id="lang" placeholder="Language">
@@ -43,7 +41,7 @@
             <input type="text" id="category" placeholder="Category">
         </div>
         <div class="action">
-            <button onclick="editPodcast()" class="submit">Submit</button>
+            <button onclick="savePodcast()" class="submit">Submit</button>
         </div>
     </div>
 </div>

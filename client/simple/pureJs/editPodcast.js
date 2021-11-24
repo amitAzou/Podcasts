@@ -1,4 +1,4 @@
-const editPodcast = async () => {
+const savePodcast = async () => {
   try {
     const body = JSON.stringify(getBody())
     console.log(body)
