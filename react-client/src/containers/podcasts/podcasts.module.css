@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.card_container {
+    position: relative;
+    font-family: "Helvetica Neue", Halvetica, sans-serif;
+    color: #eb9d38;
+    height:550px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
