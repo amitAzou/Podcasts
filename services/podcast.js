@@ -26,12 +26,12 @@ const searchItem = async (query) => {
   return searchPodcastInDataBase(query)
 }
 
-const getBestItems = async (number) => {
-  const dataBase = getSortedDataFromDataBase()
+const getSortedPodcastByRating = async () => {
+  const dataBase = await getSortedDataFromDataBase()
   const reviewsArr = await getReviewsArr()
   const ratingArr = await getRatingsArr(reviewsArr)
   const result = []
-  for (let i = 0; i < number && i < ratingArr.length; i++) {
+  for (let i = 0; i < ratingArr.length; i++) {
     result.push(dataBase.find((podcast) => podcast.id === ratingArr[i][0]))
   }
   return result
@@ -63,6 +63,6 @@ module.exports = {
   updateData,
   deleteData,
   searchItem,
-  getBestItems,
+  getSortedPodcastByRating,
   getRatingsArr
 }

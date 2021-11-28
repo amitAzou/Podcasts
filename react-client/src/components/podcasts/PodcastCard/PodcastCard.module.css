@@ -1,0 +1,28 @@
+.card_cont {
+    margin:10px 50px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    height:400px;
+    width:200px;
+    cursor: pointer;
+}
+
+.card_cont img {
+    width: 200px;
+}
+
+.card_cont p {
+    order:2;
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+.card_cont:hover {
+    transform: scale(1.3);
+}
+
+.card_cont:hover p {
+    overflow: visible;
+}
+
