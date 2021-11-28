@@ -1,0 +1,5384 @@
+[
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 1132,
+    "id": 1
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1132,
+    "id": 2
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1132,
+    "id": 3
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 1135,
+    "id": 4
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1135,
+    "id": 5
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1135,
+    "id": 6
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1292,
+    "id": 7
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1292,
+    "id": 8
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1292,
+    "id": 9
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1564,
+    "id": 10
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1564,
+    "id": 11
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1564,
+    "id": 12
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2006,
+    "id": 13
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 2006,
+    "id": 14
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 2006,
+    "id": 15
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 2015,
+    "id": 16
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 2015,
+    "id": 17
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 2015,
+    "id": 18
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 2262,
+    "id": 19
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 2262,
+    "id": 20
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 2262,
+    "id": 21
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 2738,
+    "id": 22
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 2738,
+    "id": 23
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 2738,
+    "id": 24
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 2787,
+    "id": 25
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2787,
+    "id": 26
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2787,
+    "id": 27
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2926,
+    "id": 28
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2926,
+    "id": 29
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 2926,
+    "id": 30
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3118,
+    "id": 31
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3118,
+    "id": 32
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3118,
+    "id": 33
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3119,
+    "id": 34
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3119,
+    "id": 35
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3119,
+    "id": 36
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3137,
+    "id": 37
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3137,
+    "id": 38
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3137,
+    "id": 39
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3162,
+    "id": 40
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3162,
+    "id": 41
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3162,
+    "id": 42
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3164,
+    "id": 43
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3164,
+    "id": 44
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3164,
+    "id": 45
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 3254,
+    "id": 46
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3254,
+    "id": 47
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3254,
+    "id": 48
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3255,
+    "id": 49
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 3255,
+    "id": 50
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 3255,
+    "id": 51
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3653,
+    "id": 52
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3653,
+    "id": 53
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3653,
+    "id": 54
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3800,
+    "id": 55
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3800,
+    "id": 56
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3800,
+    "id": 57
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 3895,
+    "id": 58
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3895,
+    "id": 59
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3895,
+    "id": 60
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 3943,
+    "id": 61
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3943,
+    "id": 62
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 3943,
+    "id": 63
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3944,
+    "id": 64
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3944,
+    "id": 65
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 3944,
+    "id": 66
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3947,
+    "id": 67
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3947,
+    "id": 68
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 3947,
+    "id": 69
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 4195,
+    "id": 70
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 4195,
+    "id": 71
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 4195,
+    "id": 72
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 5284,
+    "id": 73
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 5284,
+    "id": 74
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 5284,
+    "id": 75
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 5416,
+    "id": 76
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 5416,
+    "id": 77
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 5416,
+    "id": 78
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 5429,
+    "id": 79
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 5429,
+    "id": 80
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 5429,
+    "id": 81
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 6070,
+    "id": 82
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 6070,
+    "id": 83
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 6070,
+    "id": 84
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 7064,
+    "id": 85
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 7064,
+    "id": 86
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 7064,
+    "id": 87
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 8201,
+    "id": 88
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 8201,
+    "id": 89
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 8201,
+    "id": 90
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 8561,
+    "id": 91
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 8561,
+    "id": 92
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 8561,
+    "id": 93
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 8785,
+    "id": 94
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 8785,
+    "id": 95
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 8785,
+    "id": 96
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 8789,
+    "id": 97
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 8789,
+    "id": 98
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 8789,
+    "id": 99
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 10829,
+    "id": 100
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 10829,
+    "id": 101
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 10829,
+    "id": 102
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 11345,
+    "id": 103
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 11345,
+    "id": 104
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 11345,
+    "id": 105
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 11871,
+    "id": 106
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 11871,
+    "id": 107
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 11871,
+    "id": 108
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 11968,
+    "id": 109
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 11968,
+    "id": 110
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 11968,
+    "id": 111
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 12319,
+    "id": 112
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 12319,
+    "id": 113
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 12319,
+    "id": 114
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12386,
+    "id": 115
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 12386,
+    "id": 116
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 12386,
+    "id": 117
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 12387,
+    "id": 118
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 12387,
+    "id": 119
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 12387,
+    "id": 120
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 12650,
+    "id": 121
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 12650,
+    "id": 122
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 12650,
+    "id": 123
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12781,
+    "id": 124
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12781,
+    "id": 125
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12781,
+    "id": 126
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 12783,
+    "id": 127
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 12783,
+    "id": 128
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 12783,
+    "id": 129
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12784,
+    "id": 130
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12784,
+    "id": 131
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 12784,
+    "id": 132
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 13045,
+    "id": 133
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 13045,
+    "id": 134
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 13045,
+    "id": 135
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 13046,
+    "id": 136
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 13046,
+    "id": 137
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 13046,
+    "id": 138
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 13053,
+    "id": 139
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 13053,
+    "id": 140
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 13053,
+    "id": 141
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 13442,
+    "id": 142
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 13442,
+    "id": 143
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 13442,
+    "id": 144
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 14164,
+    "id": 145
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 14164,
+    "id": 146
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 14164,
+    "id": 147
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 15028,
+    "id": 148
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 15028,
+    "id": 149
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 15028,
+    "id": 150
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 15030,
+    "id": 151
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 15030,
+    "id": 152
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 15030,
+    "id": 153
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 16650,
+    "id": 154
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 16650,
+    "id": 155
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 16650,
+    "id": 156
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 17881,
+    "id": 157
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 17881,
+    "id": 158
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 17881,
+    "id": 159
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 18163,
+    "id": 160
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 18163,
+    "id": 161
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 18163,
+    "id": 162
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 19923,
+    "id": 163
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 19923,
+    "id": 164
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 19923,
+    "id": 165
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 20098,
+    "id": 166
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 20098,
+    "id": 167
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 20098,
+    "id": 168
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 20106,
+    "id": 169
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 20106,
+    "id": 170
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 20106,
+    "id": 171
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 20180,
+    "id": 172
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 20180,
+    "id": 173
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 20180,
+    "id": 174
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 20838,
+    "id": 175
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 20838,
+    "id": 176
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 20838,
+    "id": 177
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 20978,
+    "id": 178
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 20978,
+    "id": 179
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 20978,
+    "id": 180
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 24324,
+    "id": 181
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 24324,
+    "id": 182
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 24324,
+    "id": 183
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25162,
+    "id": 184
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 25162,
+    "id": 185
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 25162,
+    "id": 186
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25479,
+    "id": 187
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25479,
+    "id": 188
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25479,
+    "id": 189
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 25961,
+    "id": 190
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25961,
+    "id": 191
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 25961,
+    "id": 192
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 25962,
+    "id": 193
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 25962,
+    "id": 194
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 25962,
+    "id": 195
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 26031,
+    "id": 196
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 26031,
+    "id": 197
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 26031,
+    "id": 198
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 26281,
+    "id": 199
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 26281,
+    "id": 200
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 26281,
+    "id": 201
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 27047,
+    "id": 202
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 27047,
+    "id": 203
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 27047,
+    "id": 204
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 27775,
+    "id": 205
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 27775,
+    "id": 206
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 27775,
+    "id": 207
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 28102,
+    "id": 208
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 28102,
+    "id": 209
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 28102,
+    "id": 210
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 28188,
+    "id": 211
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 28188,
+    "id": 212
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 28188,
+    "id": 213
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 28211,
+    "id": 214
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 28211,
+    "id": 215
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 28211,
+    "id": 216
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 29179,
+    "id": 217
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 29179,
+    "id": 218
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 29179,
+    "id": 219
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 29420,
+    "id": 220
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 29420,
+    "id": 221
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 29420,
+    "id": 222
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 29552,
+    "id": 223
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 29552,
+    "id": 224
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 29552,
+    "id": 225
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 30426,
+    "id": 226
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 30426,
+    "id": 227
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 30426,
+    "id": 228
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 30791,
+    "id": 229
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 30791,
+    "id": 230
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 30791,
+    "id": 231
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 30820,
+    "id": 232
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 30820,
+    "id": 233
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 30820,
+    "id": 234
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 31666,
+    "id": 235
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 31666,
+    "id": 236
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 31666,
+    "id": 237
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 31669,
+    "id": 238
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 31669,
+    "id": 239
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 31669,
+    "id": 240
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 32943,
+    "id": 241
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 32943,
+    "id": 242
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 32943,
+    "id": 243
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 33311,
+    "id": 244
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 33311,
+    "id": 245
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 33311,
+    "id": 246
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 33312,
+    "id": 247
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 33312,
+    "id": 248
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 33312,
+    "id": 249
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 33314,
+    "id": 250
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 33314,
+    "id": 251
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 33314,
+    "id": 252
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 34193,
+    "id": 253
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 34193,
+    "id": 254
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 34193,
+    "id": 255
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 35278,
+    "id": 256
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 35278,
+    "id": 257
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 35278,
+    "id": 258
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 35483,
+    "id": 259
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 35483,
+    "id": 260
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 35483,
+    "id": 261
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 35484,
+    "id": 262
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 35484,
+    "id": 263
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 35484,
+    "id": 264
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 35836,
+    "id": 265
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 35836,
+    "id": 266
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 35836,
+    "id": 267
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 35974,
+    "id": 268
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 35974,
+    "id": 269
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 35974,
+    "id": 270
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 36327,
+    "id": 271
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 36327,
+    "id": 272
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 36327,
+    "id": 273
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 36645,
+    "id": 274
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 36645,
+    "id": 275
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 36645,
+    "id": 276
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 36924,
+    "id": 277
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 36924,
+    "id": 278
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 36924,
+    "id": 279
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 38586,
+    "id": 280
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 38586,
+    "id": 281
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 38586,
+    "id": 282
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 38617,
+    "id": 283
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 38617,
+    "id": 284
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 38617,
+    "id": 285
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 39148,
+    "id": 286
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39148,
+    "id": 287
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39148,
+    "id": 288
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39175,
+    "id": 289
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 39175,
+    "id": 290
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 39175,
+    "id": 291
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 39179,
+    "id": 292
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 39179,
+    "id": 293
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 39179,
+    "id": 294
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 39510,
+    "id": 295
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 39510,
+    "id": 296
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 39510,
+    "id": 297
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 39515,
+    "id": 298
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39515,
+    "id": 299
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39515,
+    "id": 300
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 39961,
+    "id": 301
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 39961,
+    "id": 302
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 39961,
+    "id": 303
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 41091,
+    "id": 304
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 41091,
+    "id": 305
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 41091,
+    "id": 306
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 41099,
+    "id": 307
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41099,
+    "id": 308
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41099,
+    "id": 309
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41184,
+    "id": 310
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41184,
+    "id": 311
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41184,
+    "id": 312
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 41341,
+    "id": 313
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 41341,
+    "id": 314
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 41341,
+    "id": 315
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 41709,
+    "id": 316
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41709,
+    "id": 317
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 41709,
+    "id": 318
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 43273,
+    "id": 319
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 43273,
+    "id": 320
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 43273,
+    "id": 321
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 44949,
+    "id": 322
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 44949,
+    "id": 323
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 44949,
+    "id": 324
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 44963,
+    "id": 325
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 44963,
+    "id": 326
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 44963,
+    "id": 327
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 45441,
+    "id": 328
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 45441,
+    "id": 329
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 45441,
+    "id": 330
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 45997,
+    "id": 331
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 45997,
+    "id": 332
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 45997,
+    "id": 333
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 46112,
+    "id": 334
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 46112,
+    "id": 335
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 46112,
+    "id": 336
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 46802,
+    "id": 337
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 46802,
+    "id": 338
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 46802,
+    "id": 339
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 47475,
+    "id": 340
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 47475,
+    "id": 341
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 47475,
+    "id": 342
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 49693,
+    "id": 343
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 49693,
+    "id": 344
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 49693,
+    "id": 345
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 49777,
+    "id": 346
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 49777,
+    "id": 347
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 49777,
+    "id": 348
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 50083,
+    "id": 349
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 50083,
+    "id": 350
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 50083,
+    "id": 351
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 50178,
+    "id": 352
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 50178,
+    "id": 353
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 50178,
+    "id": 354
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 51334,
+    "id": 355
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 51334,
+    "id": 356
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 51334,
+    "id": 357
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 56676,
+    "id": 358
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 56676,
+    "id": 359
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 56676,
+    "id": 360
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 58804,
+    "id": 361
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 58804,
+    "id": 362
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 58804,
+    "id": 363
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 60109,
+    "id": 364
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 60109,
+    "id": 365
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 60109,
+    "id": 366
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 61783,
+    "id": 367
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 61783,
+    "id": 368
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 61783,
+    "id": 369
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 63270,
+    "id": 370
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 63270,
+    "id": 371
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 63270,
+    "id": 372
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 64083,
+    "id": 373
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 64083,
+    "id": 374
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 64083,
+    "id": 375
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 67639,
+    "id": 376
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 67639,
+    "id": 377
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 67639,
+    "id": 378
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 72202,
+    "id": 379
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 72202,
+    "id": 380
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 72202,
+    "id": 381
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 77311,
+    "id": 382
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 77311,
+    "id": 383
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 77311,
+    "id": 384
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 82327,
+    "id": 385
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 82327,
+    "id": 386
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 82327,
+    "id": 387
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 82380,
+    "id": 388
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 82380,
+    "id": 389
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 82380,
+    "id": 390
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 82382,
+    "id": 391
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 82382,
+    "id": 392
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 82382,
+    "id": 393
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 82384,
+    "id": 394
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 82384,
+    "id": 395
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 82384,
+    "id": 396
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 82390,
+    "id": 397
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 82390,
+    "id": 398
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 82390,
+    "id": 399
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 82418,
+    "id": 400
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 82418,
+    "id": 401
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 82418,
+    "id": 402
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 84659,
+    "id": 403
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 84659,
+    "id": 404
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 84659,
+    "id": 405
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 84757,
+    "id": 406
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 84757,
+    "id": 407
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 84757,
+    "id": 408
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 85557,
+    "id": 409
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 85557,
+    "id": 410
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 85557,
+    "id": 411
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 87589,
+    "id": 412
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 87589,
+    "id": 413
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 87589,
+    "id": 414
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 91450,
+    "id": 415
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 91450,
+    "id": 416
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 91450,
+    "id": 417
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 93359,
+    "id": 418
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 93359,
+    "id": 419
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 93359,
+    "id": 420
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 93367,
+    "id": 421
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 93367,
+    "id": 422
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 93367,
+    "id": 423
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 96100,
+    "id": 424
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 96100,
+    "id": 425
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 96100,
+    "id": 426
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 102986,
+    "id": 427
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 102986,
+    "id": 428
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 102986,
+    "id": 429
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 107565,
+    "id": 430
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 107565,
+    "id": 431
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 107565,
+    "id": 432
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 108211,
+    "id": 433
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 108211,
+    "id": 434
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 108211,
+    "id": 435
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 110788,
+    "id": 436
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 110788,
+    "id": 437
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 110788,
+    "id": 438
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 110790,
+    "id": 439
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 110790,
+    "id": 440
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 110790,
+    "id": 441
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 112921,
+    "id": 442
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112921,
+    "id": 443
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112921,
+    "id": 444
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 112922,
+    "id": 445
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 112922,
+    "id": 446
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 112922,
+    "id": 447
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 112930,
+    "id": 448
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112930,
+    "id": 449
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112930,
+    "id": 450
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 112932,
+    "id": 451
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112932,
+    "id": 452
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 112932,
+    "id": 453
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 112953,
+    "id": 454
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 112953,
+    "id": 455
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 112953,
+    "id": 456
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 120354,
+    "id": 457
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 120354,
+    "id": 458
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 120354,
+    "id": 459
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 121020,
+    "id": 460
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 121020,
+    "id": 461
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 121020,
+    "id": 462
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 130989,
+    "id": 463
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 130989,
+    "id": 464
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 130989,
+    "id": 465
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 130992,
+    "id": 466
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 130992,
+    "id": 467
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 130992,
+    "id": 468
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 130993,
+    "id": 469
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 130993,
+    "id": 470
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 130993,
+    "id": 471
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 130994,
+    "id": 472
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 130994,
+    "id": 473
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 130994,
+    "id": 474
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 133737,
+    "id": 475
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 133737,
+    "id": 476
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 133737,
+    "id": 477
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 136759,
+    "id": 478
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 136759,
+    "id": 479
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 136759,
+    "id": 480
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 139479,
+    "id": 481
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 139479,
+    "id": 482
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 139479,
+    "id": 483
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 139481,
+    "id": 484
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 139481,
+    "id": 485
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 139481,
+    "id": 486
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 140331,
+    "id": 487
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 140331,
+    "id": 488
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 140331,
+    "id": 489
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 144050,
+    "id": 490
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 144050,
+    "id": 491
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 144050,
+    "id": 492
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 152374,
+    "id": 493
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 152374,
+    "id": 494
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 152374,
+    "id": 495
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155319,
+    "id": 496
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 155319,
+    "id": 497
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 155319,
+    "id": 498
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 155320,
+    "id": 499
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155320,
+    "id": 500
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155320,
+    "id": 501
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 155321,
+    "id": 502
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 155321,
+    "id": 503
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 155321,
+    "id": 504
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155324,
+    "id": 505
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155324,
+    "id": 506
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 155324,
+    "id": 507
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 157854,
+    "id": 508
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 157854,
+    "id": 509
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 157854,
+    "id": 510
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 158288,
+    "id": 511
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 158288,
+    "id": 512
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 158288,
+    "id": 513
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 158740,
+    "id": 514
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 158740,
+    "id": 515
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 158740,
+    "id": 516
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 164302,
+    "id": 517
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 164302,
+    "id": 518
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 164302,
+    "id": 519
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 164307,
+    "id": 520
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 164307,
+    "id": 521
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 164307,
+    "id": 522
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 168383,
+    "id": 523
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 168383,
+    "id": 524
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 168383,
+    "id": 525
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 183445,
+    "id": 526
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 183445,
+    "id": 527
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 183445,
+    "id": 528
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 188519,
+    "id": 529
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 188519,
+    "id": 530
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 188519,
+    "id": 531
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 190386,
+    "id": 532
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 190386,
+    "id": 533
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 190386,
+    "id": 534
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 203670,
+    "id": 535
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 203670,
+    "id": 536
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 203670,
+    "id": 537
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 207202,
+    "id": 538
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 207202,
+    "id": 539
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 207202,
+    "id": 540
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 208350,
+    "id": 541
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 208350,
+    "id": 542
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 208350,
+    "id": 543
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 216016,
+    "id": 544
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216016,
+    "id": 545
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216016,
+    "id": 546
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 216369,
+    "id": 547
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216369,
+    "id": 548
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216369,
+    "id": 549
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 216387,
+    "id": 550
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216387,
+    "id": 551
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216387,
+    "id": 552
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 216437,
+    "id": 553
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 216437,
+    "id": 554
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 216437,
+    "id": 555
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 216559,
+    "id": 556
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 216559,
+    "id": 557
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 216559,
+    "id": 558
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 219011,
+    "id": 559
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 219011,
+    "id": 560
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 219011,
+    "id": 561
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 222674,
+    "id": 562
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 222674,
+    "id": 563
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 222674,
+    "id": 564
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 225906,
+    "id": 565
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 225906,
+    "id": 566
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 225906,
+    "id": 567
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 229224,
+    "id": 568
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 229224,
+    "id": 569
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 229224,
+    "id": 570
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 232899,
+    "id": 571
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 232899,
+    "id": 572
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 232899,
+    "id": 573
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 234629,
+    "id": 574
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 234629,
+    "id": 575
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 234629,
+    "id": 576
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 243479,
+    "id": 577
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 243479,
+    "id": 578
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 243479,
+    "id": 579
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 243522,
+    "id": 580
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 243522,
+    "id": 581
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 243522,
+    "id": 582
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 245006,
+    "id": 583
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 245006,
+    "id": 584
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 245006,
+    "id": 585
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 245150,
+    "id": 586
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 245150,
+    "id": 587
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 245150,
+    "id": 588
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 413654,
+    "id": 589
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 413654,
+    "id": 590
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 413654,
+    "id": 591
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 424344,
+    "id": 592
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 424344,
+    "id": 593
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 424344,
+    "id": 594
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 452139,
+    "id": 595
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 452139,
+    "id": 596
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 452139,
+    "id": 597
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 467983,
+    "id": 598
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 467983,
+    "id": 599
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 467983,
+    "id": 600
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 473804,
+    "id": 601
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 473804,
+    "id": 602
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 473804,
+    "id": 603
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 498083,
+    "id": 604
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 498083,
+    "id": 605
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 498083,
+    "id": 606
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 509298,
+    "id": 607
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 509298,
+    "id": 608
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 509298,
+    "id": 609
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 513417,
+    "id": 610
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 513417,
+    "id": 611
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 513417,
+    "id": 612
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 515352,
+    "id": 613
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 515352,
+    "id": 614
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 515352,
+    "id": 615
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 521055,
+    "id": 616
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 521055,
+    "id": 617
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 521055,
+    "id": 618
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 525598,
+    "id": 619
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 525598,
+    "id": 620
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 525598,
+    "id": 621
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 528552,
+    "id": 622
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 528552,
+    "id": 623
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 528552,
+    "id": 624
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 528553,
+    "id": 625
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 528553,
+    "id": 626
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 528553,
+    "id": 627
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 528622,
+    "id": 628
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 528622,
+    "id": 629
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 528622,
+    "id": 630
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 528815,
+    "id": 631
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 528815,
+    "id": 632
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 528815,
+    "id": 633
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 530536,
+    "id": 634
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 530536,
+    "id": 635
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 530536,
+    "id": 636
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 531319,
+    "id": 637
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 531319,
+    "id": 638
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 531319,
+    "id": 639
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 532009,
+    "id": 640
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 532009,
+    "id": 641
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 532009,
+    "id": 642
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 538230,
+    "id": 643
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 538230,
+    "id": 644
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 538230,
+    "id": 645
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 541277,
+    "id": 646
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 541277,
+    "id": 647
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 541277,
+    "id": 648
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 541280,
+    "id": 649
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 541280,
+    "id": 650
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 541280,
+    "id": 651
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 545240,
+    "id": 652
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 545240,
+    "id": 653
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 545240,
+    "id": 654
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 547361,
+    "id": 655
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 547361,
+    "id": 656
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 547361,
+    "id": 657
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 549572,
+    "id": 658
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 549572,
+    "id": 659
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 549572,
+    "id": 660
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 550875,
+    "id": 661
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 550875,
+    "id": 662
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 550875,
+    "id": 663
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 551174,
+    "id": 664
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 551174,
+    "id": 665
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 551174,
+    "id": 666
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 551231,
+    "id": 667
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 551231,
+    "id": 668
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 551231,
+    "id": 669
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 552380,
+    "id": 670
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 552380,
+    "id": 671
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 552380,
+    "id": 672
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 560674,
+    "id": 673
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 560674,
+    "id": 674
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 560674,
+    "id": 675
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 573699,
+    "id": 676
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 573699,
+    "id": 677
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 573699,
+    "id": 678
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 574726,
+    "id": 679
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 574726,
+    "id": 680
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 574726,
+    "id": 681
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 577176,
+    "id": 682
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 577176,
+    "id": 683
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 577176,
+    "id": 684
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 577613,
+    "id": 685
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 577613,
+    "id": 686
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 577613,
+    "id": 687
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 579890,
+    "id": 688
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 579890,
+    "id": 689
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 579890,
+    "id": 690
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 582761,
+    "id": 691
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 582761,
+    "id": 692
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 582761,
+    "id": 693
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 582769,
+    "id": 694
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 582769,
+    "id": 695
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 582769,
+    "id": 696
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 584788,
+    "id": 697
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 584788,
+    "id": 698
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 584788,
+    "id": 699
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 586065,
+    "id": 700
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 586065,
+    "id": 701
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 586065,
+    "id": 702
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 586444,
+    "id": 703
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 586444,
+    "id": 704
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 586444,
+    "id": 705
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 588743,
+    "id": 706
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 588743,
+    "id": 707
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 588743,
+    "id": 708
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 588942,
+    "id": 709
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 588942,
+    "id": 710
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 588942,
+    "id": 711
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 591512,
+    "id": 712
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 591512,
+    "id": 713
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 591512,
+    "id": 714
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 595400,
+    "id": 715
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 595400,
+    "id": 716
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 595400,
+    "id": 717
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 595555,
+    "id": 718
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 595555,
+    "id": 719
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 595555,
+    "id": 720
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 597196,
+    "id": 721
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 597196,
+    "id": 722
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 597196,
+    "id": 723
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 597262,
+    "id": 724
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 597262,
+    "id": 725
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 597262,
+    "id": 726
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 611736,
+    "id": 727
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 611736,
+    "id": 728
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 611736,
+    "id": 729
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 611970,
+    "id": 730
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 611970,
+    "id": 731
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 611970,
+    "id": 732
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 618297,
+    "id": 733
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 618297,
+    "id": 734
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 618297,
+    "id": 735
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 620093,
+    "id": 736
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 620093,
+    "id": 737
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 620093,
+    "id": 738
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 621524,
+    "id": 739
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 621524,
+    "id": 740
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 621524,
+    "id": 741
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 622178,
+    "id": 742
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 622178,
+    "id": 743
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 622178,
+    "id": 744
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 624065,
+    "id": 745
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 624065,
+    "id": 746
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 624065,
+    "id": 747
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 627530,
+    "id": 748
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 627530,
+    "id": 749
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 627530,
+    "id": 750
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 629554,
+    "id": 751
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 629554,
+    "id": 752
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 629554,
+    "id": 753
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 637618,
+    "id": 754
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 637618,
+    "id": 755
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 637618,
+    "id": 756
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 652620,
+    "id": 757
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 652620,
+    "id": 758
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 652620,
+    "id": 759
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 655635,
+    "id": 760
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 655635,
+    "id": 761
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 655635,
+    "id": 762
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 660292,
+    "id": 763
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 660292,
+    "id": 764
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 660292,
+    "id": 765
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 665637,
+    "id": 766
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 665637,
+    "id": 767
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 665637,
+    "id": 768
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 666350,
+    "id": 769
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 666350,
+    "id": 770
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 666350,
+    "id": 771
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 670145,
+    "id": 772
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 670145,
+    "id": 773
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 670145,
+    "id": 774
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 673886,
+    "id": 775
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 673886,
+    "id": 776
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 673886,
+    "id": 777
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 679547,
+    "id": 778
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 679547,
+    "id": 779
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 679547,
+    "id": 780
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 699887,
+    "id": 781
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 699887,
+    "id": 782
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 699887,
+    "id": 783
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 709485,
+    "id": 784
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 709485,
+    "id": 785
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 709485,
+    "id": 786
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 718811,
+    "id": 787
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 718811,
+    "id": 788
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 718811,
+    "id": 789
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 721928,
+    "id": 790
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 721928,
+    "id": 791
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 721928,
+    "id": 792
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 722224,
+    "id": 793
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 722224,
+    "id": 794
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 722224,
+    "id": 795
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 722707,
+    "id": 796
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 722707,
+    "id": 797
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 722707,
+    "id": 798
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 724471,
+    "id": 799
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 724471,
+    "id": 800
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 724471,
+    "id": 801
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736336,
+    "id": 802
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736336,
+    "id": 803
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736336,
+    "id": 804
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736629,
+    "id": 805
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736629,
+    "id": 806
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 736629,
+    "id": 807
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 740891,
+    "id": 808
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 740891,
+    "id": 809
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 740891,
+    "id": 810
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 746490,
+    "id": 811
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 746490,
+    "id": 812
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 746490,
+    "id": 813
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 785966,
+    "id": 814
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 785966,
+    "id": 815
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 785966,
+    "id": 816
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 792556,
+    "id": 817
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 792556,
+    "id": 818
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 792556,
+    "id": 819
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 792882,
+    "id": 820
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 792882,
+    "id": 821
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 792882,
+    "id": 822
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 793442,
+    "id": 823
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 793442,
+    "id": 824
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 793442,
+    "id": 825
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 793845,
+    "id": 826
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 793845,
+    "id": 827
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 793845,
+    "id": 828
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 817865,
+    "id": 829
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 817865,
+    "id": 830
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 817865,
+    "id": 831
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 837650,
+    "id": 832
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 837650,
+    "id": 833
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 837650,
+    "id": 834
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 840293,
+    "id": 835
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 840293,
+    "id": 836
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 840293,
+    "id": 837
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 867844,
+    "id": 838
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 867844,
+    "id": 839
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 867844,
+    "id": 840
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 872197,
+    "id": 841
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 872197,
+    "id": 842
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 872197,
+    "id": 843
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 895321,
+    "id": 844
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 895321,
+    "id": 845
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 895321,
+    "id": 846
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 906885,
+    "id": 847
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 906885,
+    "id": 848
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 906885,
+    "id": 849
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 907909,
+    "id": 850
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 907909,
+    "id": 851
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 907909,
+    "id": 852
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 914768,
+    "id": 853
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 914768,
+    "id": 854
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 914768,
+    "id": 855
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 939764,
+    "id": 856
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 939764,
+    "id": 857
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 939764,
+    "id": 858
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 978745,
+    "id": 859
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 978745,
+    "id": 860
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 978745,
+    "id": 861
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 993470,
+    "id": 862
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 993470,
+    "id": 863
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 993470,
+    "id": 864
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 995660,
+    "id": 865
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 995660,
+    "id": 866
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 995660,
+    "id": 867
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1023846,
+    "id": 868
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1023846,
+    "id": 869
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1023846,
+    "id": 870
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1024735,
+    "id": 871
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1024735,
+    "id": 872
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1024735,
+    "id": 873
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 1030450,
+    "id": 874
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1030450,
+    "id": 875
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1030450,
+    "id": 876
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1041150,
+    "id": 877
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1041150,
+    "id": 878
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1041150,
+    "id": 879
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1097716,
+    "id": 880
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1097716,
+    "id": 881
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1097716,
+    "id": 882
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1164786,
+    "id": 883
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1164786,
+    "id": 884
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1164786,
+    "id": 885
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1216955,
+    "id": 886
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1216955,
+    "id": 887
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1216955,
+    "id": 888
+  },
+  {
+    "rating": 7,
+    "text": "Nice",
+    "podcastId": 1230612,
+    "id": 889
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1230612,
+    "id": 890
+  },
+  {
+    "rating": 10,
+    "text": "Amazing!",
+    "podcastId": 1230612,
+    "id": 891
+  },
+  {
+    "rating": 8,
+    "text": "Some episodes are good",
+    "podcastId": 1320188,
+    "id": 892
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1320188,
+    "id": 893
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1320188,
+    "id": 894
+  },
+  {
+    "rating": 9,
+    "text": "Interesting and witty",
+    "podcastId": 1476061,
+    "id": 895
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1476061,
+    "id": 896
+  },
+  {
+    "rating": 5,
+    "text": "Didn't like it that much",
+    "podcastId": 1476061,
+    "id": 897
+  }
+]
