@@ -1,13 +1,11 @@
 import React from "react";
-import style from "SiteLogo.module.css"
+import style from "./SiteLogo.module.css"
+import logo from "../../../images/site_logo_main.png"
 
 const SiteLogo = (props) => {
-    return <div className={style.card_cont}>
-        <img src={props.imageUrl} alt={'img'}/>
-        <h2>{props.title}</h2>
-        <p>{props.description}</p>
+  return  <div>
+        <img src={logo} className={style.site_logo}/>
     </div>
-
 };
 
 export default SiteLogo;
