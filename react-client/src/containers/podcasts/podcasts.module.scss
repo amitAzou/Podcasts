@@ -5,99 +5,96 @@ body {
     justify-content: space-between;
     overflow-x: hidden;
     overflow-y: scroll;
-
-    .first_row {
-        order: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .user_menu {
-        flex: 1;
-        order: 3;
-        position: relative;
-        height: 110px;
-        left: 100px;
-
-    }
-
-    .headline {
-        flex: 7;
-        font-family: Monaco, sans-serif;
-        display: inline;
-        text-align: center;
-        color: white;
-        position: relative;
-        left: 50px;
-
-    }
-
-    .mic_logo {
-        height: 70px;
-        position: relative;
-        top: 15px;
-    }
-
-    .second_row {
-        display: flex;
-        justify-content: center;
-    }
-
-    .third_row {
-        order: 3;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .add_button {
-        bottom: 20px;
-        align-self: end;
-    }
-
-    .card_container {
-        position: relative;
-        font-family: "Helvetica Neue", Halvetica, sans-serif;
-        color: #eb9d38;
-        height: 650px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        width: 100%;
-        background-color: #000000;
-        border-radius: 10px;
-        box-shadow: 0 0 10px lightgray;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .fourth_row {
-        display: flex;
-        order: 4;
-        justify-content: center;
-    }
-
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #090909;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
 }
 
+.first_row {
+    order:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.user_menu {
+    flex:1;
+    order:3;
+    position: relative;
+    height: 110px;
+    left:100px;
 
+}
+
+.headline {
+    flex:7;
+    font-family: Monaco, sans-serif;
+    display: inline;
+    text-align: center;
+    color: white;
+    position: relative;
+    left:50px;
+
+}
+
+.mic_logo {
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.second_row {
+    display: flex;
+    justify-content: center;
+}
+
+.third_row {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.add_button {
+    bottom: 20px;
+    align-self: end;
+}
+
+.card_container {
+    position: relative;
+    font-family: "Helvetica Neue", Halvetica, sans-serif;
+    color: #eb9d38;
+    height:650px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fourth_row {
+    display: flex;
+    order:4;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090909;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

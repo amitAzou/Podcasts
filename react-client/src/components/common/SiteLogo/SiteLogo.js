@@ -1,11 +1,11 @@
 import React from 'react'
-import style from './SiteLogo.module.css'
+import style from './SiteLogo.module.scss'
 import logo from '../../../images/site_logo_main.png'
 
 const SiteLogo = () => {
   return (
     <div>
-      <img src={logo} className={style.site_logo} />
+      <img src={logo} className={style.site_logo} alt={'site logo'} />
     </div>
   )
 }

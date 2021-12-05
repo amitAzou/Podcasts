@@ -7,7 +7,8 @@ import {
   Navigate,
 } from 'react-router-dom'
 import Podcasts from './containers/podcasts/podcasts'
-import PodcastDetails from './containers/podcast_details/podcast_details'
+
+import PodcastDetails from './containers/podcast_details/Podcast_details'
 
 function App() {
   return (
