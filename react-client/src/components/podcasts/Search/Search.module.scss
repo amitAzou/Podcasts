@@ -13,16 +13,16 @@
     background-color: transparent;
     color:white;
 
+    &::placeholder {
+        color:white;
+    }
+
+    &:hover {
+        background-color: #939393;
+        color: black;
+    }
 }
 
-.searchInput::placeholder {
-    color:white;
-}
-
-.searchInput:hover {
-    background-color: #939393;
-    color: black;
-}
 
 input {
     outline: none;
