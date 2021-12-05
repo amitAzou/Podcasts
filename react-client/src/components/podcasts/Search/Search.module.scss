@@ -1,0 +1,33 @@
+.search {
+    position: relative;
+    text-align: center;
+    width: 50%;
+
+    .searchInput {
+        height: 50px;
+        width: 50%;
+        border: 3px solid #313d52;
+        border-radius: 999px;
+        background-color: transparent;
+        color: white;
+
+        &::placeholder {
+            color: white;
+        }
+
+        &:hover {
+            background-color: #939393;
+            color: black;
+        }
+    }
+}
+
+input {
+    outline: none;
+    text-align: center;
+}
+
+
+
+
+

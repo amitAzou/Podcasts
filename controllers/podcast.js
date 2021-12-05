@@ -64,11 +64,7 @@ const searchPodcast = async (req, res, next) => {
       return getPodcastsByRating(req, res, next)
     }
     const result = await searchItem(query.toLowerCase())
-    if (result.length === 0) {
-      return res.status(200).send([])
-    } else {
-      return res.status(200).send(result)
-    }
+    return res.status(200).send(result)
   } catch (err) {
     return next(err)
   }
@@ -77,11 +73,7 @@ const searchPodcast = async (req, res, next) => {
 const getPodcastsByRating = async (req, res, next) => {
   try {
     const result = await getSortedPodcastByRating()
-    if (result.length === 0) {
-      return res.status(404).send('There are no ratings for any podcast')
-    } else {
-      return res.status(200).send(result)
-    }
+    return res.status(200).send(result)
   } catch (err) {
     return next(err)
   }
