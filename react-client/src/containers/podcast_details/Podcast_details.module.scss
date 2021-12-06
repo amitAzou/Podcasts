@@ -38,9 +38,11 @@ body {
         margin-left: 20px;
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-content: center;
         align-self: center;
+        align-items: center;
         padding: 2rem;
         background-color: black;
         height: 600px;
@@ -50,6 +52,19 @@ body {
         overflow-y: scroll;
         overflow-x: hidden;
     }
+
+    .edit_podcast {
+        margin-top: 30px;
+        align-self: center;
+        width: 150px;
+        background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+        border-radius: 5px;
+        color: white;
+        border: 2px solid lightgray;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
 }
 
 

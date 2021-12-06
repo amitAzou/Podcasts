@@ -9,6 +9,7 @@ import {
 import Podcasts from './containers/podcasts/podcasts'
 
 import PodcastDetails from './containers/podcast_details/Podcast_details'
+import EditPodcast from './containers/edit_podcast/EditPodcast'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/podcast" element={<Podcasts />} />
         <Route path="/podcast/*" element={<PodcastDetails />} />
         <Route path="/" element={<Navigate to="/podcast" />} />
+        <Route path="/podcast/edit-podcast/*" element={<EditPodcast />} />
       </Routes>
     </Router>
   )

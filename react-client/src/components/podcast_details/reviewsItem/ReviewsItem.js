@@ -13,7 +13,6 @@ const ReviewsItem = () => {
   async function fetchData() {
     try {
       const data = await getReviews(id)
-      console.log(data)
       setReviews(data)
     } catch (err) {
       setReviews([])
@@ -26,18 +25,23 @@ const ReviewsItem = () => {
 
   return (
     <div className={style.reviews_details_box}>
-      <div className={style.add}>
-        <AddButton text={'Add Review'} />
+      <div className={style.first_row}>
+        <h2 className={style.title}>Podcast Reviews</h2>
+        <div className={style.add}>
+          <AddButton text={'Add Review'} />
+        </div>
       </div>
-      {reviews.map((singleReview) => {
-        return (
-          <SingleReview
-            key={singleReview.id}
-            rating={singleReview.rating}
-            text={singleReview.text}
-          />
-        )
-      })}
+      <div className={style.second_row}>
+        {reviews.map((singleReview) => {
+          return (
+            <SingleReview
+              key={singleReview.id}
+              rating={singleReview.rating}
+              text={singleReview.text}
+            />
+          )
+        })}
+      </div>
     </div>
   )
 }

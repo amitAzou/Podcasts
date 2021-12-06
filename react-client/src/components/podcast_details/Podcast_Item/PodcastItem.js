@@ -6,13 +6,11 @@ import {useLocation} from 'react-router-dom'
 const PodcastItem = () => {
   const [podcast, setPodcasts] = useState([])
   const location = useLocation()
-  console.log(location)
   const id = location.pathname.replace('/podcast/', '')
 
   async function fetchData() {
     try {
       const data = await getPodcast(id)
-      console.log(data)
       setPodcasts(data)
     } catch (err) {
       setPodcasts([])
