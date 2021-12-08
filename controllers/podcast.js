@@ -1,4 +1,11 @@
-const { getItem, addNewPodcast, updateData, deleteData, searchItem, getBestItems } = require('../services/podcast')
+const {
+  getItem,
+  addNewPodcast,
+  updateData,
+  deleteData,
+  searchItem,
+  getSortedPodcastByRating
+} = require('../services/podcast')
 
 const getPodcast = async (req, res, next) => {
   try {
@@ -52,27 +59,21 @@ const deletePodcast = async (req, res, next) => {
 
 const searchPodcast = async (req, res, next) => {
   try {
-    const query = req.params.query.toLowerCase()
-    const result = await searchItem(query)
-    if (result.length === 0) {
-      return res.status(404).send('There are no podcasts containing these keywords')
-    } else {
-      return res.status(200).send(result)
+    const query = req.params.query
+    if (!query) {
+      return getPodcastsByRating(req, res, next)
     }
+    const result = await searchItem(query.toLowerCase())
+    return res.status(200).send(result)
   } catch (err) {
     return next(err)
   }
 }
 
-const getBestPodcasts = async (req, res, next) => {
+const getPodcastsByRating = async (req, res, next) => {
   try {
-    const number = parseInt(req.params.number)
-    const result = await getBestItems(number)
-    if (result.length === 0) {
-      return res.status(404).send('There are no ratings for any podcast')
-    } else {
-      return res.status(200).send(result)
-    }
+    const result = await getSortedPodcastByRating()
+    return res.status(200).send(result)
   } catch (err) {
     return next(err)
   }
@@ -84,5 +85,5 @@ module.exports = {
   updatePodcast,
   deletePodcast,
   searchPodcast,
-  getBestPodcasts
+  getPodcastsByRating
 }

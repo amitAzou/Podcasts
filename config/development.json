@@ -5,8 +5,8 @@
       "filePath" : "data/podcasts.json",
       "reviewsPath": "data/reviews.json",
       "cacheExpiration": 1200,
-      "isCacheEnabled": true,
-      "static": "simple",
+      "isCacheEnabled": false,
+      "static": "react-client/src",
       "redis": {
             "host": "localhost",
             "port": 6379

@@ -1,0 +1,27 @@
+.elements {
+  display: flex;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  text-align: center;
+
+  .single_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 14px;
+    }
+
+    .head {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .data {
+      margin-left: 1em;
+      color: #eb9d31
+    }
+
+  }
+}

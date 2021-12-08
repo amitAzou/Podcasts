@@ -1,0 +1,38 @@
+.card_cont {
+    margin: 10px 50px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    height: 400px;
+    width: 200px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+
+    &:hover {
+        p {
+            overflow: visible;
+        }
+    }
+
+}
+
+.description {
+    order: 2;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
