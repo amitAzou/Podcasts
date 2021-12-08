@@ -17,6 +17,7 @@ const EditPodcast = () => {
       const data = await getPodcast(id)
       setPodcastDetails(data)
     } catch (err) {
+      console.error(err)
       setPodcastDetails({})
     }
   }
