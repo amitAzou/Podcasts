@@ -11,6 +11,7 @@ import Podcasts from './containers/podcasts/podcasts'
 import PodcastDetails from './containers/podcast_details/Podcast_details'
 import EditPodcast from './containers/edit_podcast/EditPodcast'
 import AddPodcast from './containers/add_podcast/AddPodcast'
+import AddReview from './containers/add_review/AddReview'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Navigate to="/podcast" />} />
         <Route path="/podcast/edit-podcast/*" element={<EditPodcast />} />
         <Route path="/podcast/add/*" element={<AddPodcast />} />
+        <Route path="/podcast/add-review/*" element={<AddReview />} />
       </Routes>
     </Router>
   )
