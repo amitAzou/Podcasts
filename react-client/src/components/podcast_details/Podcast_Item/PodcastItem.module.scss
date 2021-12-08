@@ -1,18 +1,18 @@
 .podcast_details_box {
-    padding-top: 4rem;
+    padding-top: 2rem;
     display: flex;
     text-align: center;
     flex-direction: column;
     color: white;
     font-size: 18px;
-    justify-content: space-around;
+    justify-content: space-between;
 
 
     .podcast_pic {
-        margin:2rem;
+        align-self: center;
+        margin-bottom:2rem;
         height:150px;
         width:150px;
-        align-self: center;
     }
     ֿ
     .elements {

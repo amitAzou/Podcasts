@@ -7,6 +7,8 @@ import {deletePodcast, editPodcast, getPodcast} from '../../services/podcasts'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
+  const [redirect, setRedirect] = useState('')
+
   const location = useLocation()
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
 
@@ -21,7 +23,7 @@ const EditPodcast = () => {
 
   useEffect(() => {
     setInitialDetails()
-  }, [])
+  })
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -37,16 +39,19 @@ const EditPodcast = () => {
   const savePodcast = async () => {
     try {
       await editPodcast(id, podcastDetails)
-      console.log('im here')
+      setRedirect(`/podcast/${id}`)
     } catch (err) {
       console.log(err)
+      setRedirect(`/podcast/edit-podcast/${id}`)
     }
   }
 
   const deleteCurrent = async () => {
     try {
       await deletePodcast(id)
+      setRedirect(`/`)
     } catch (err) {
+      setRedirect(`/podcast/edit-podcast/${id}`)
       console.log(err)
     }
   }
@@ -63,10 +68,10 @@ const EditPodcast = () => {
       <div className={style.second_row}>
         <div className={style.form_box}>
           <div className={style.pod_info}>
-            <Link to={{pathname: `/`}}>
-              <button onClick={deleteCurrent} className={style.delete}>
+            <Link to={{pathname: redirect}} onClick={deleteCurrent}>
+              <div className={style.delete}>
                 <span className={style.delete_text}>Delete Podcast</span>
-              </button>
+              </div>
             </Link>
             <div className={style.params}>
               <input
@@ -129,7 +134,7 @@ const EditPodcast = () => {
                 placeholder="Category"
               />
               <div className={style.action}>
-                <Link to={{pathname: `/podcast/${id}`}} onClick={savePodcast()}>
+                <Link to={{pathname: redirect}} onClick={savePodcast}>
                   <div className={style.submit}>Submit</div>
                 </Link>
               </div>

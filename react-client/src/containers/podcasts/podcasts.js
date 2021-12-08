@@ -8,6 +8,7 @@ import UserMenu from '../../components/common/UserMenu/UserMenu'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
 import AddButton from '../../components/common/AddButton/AddButton'
 import logo from '../../images/mic_logo.png'
+import {Link} from 'react-router-dom'
 
 const Podcasts = () => {
   const [podcasts, setPodcasts] = useState([])
@@ -43,7 +44,9 @@ const Podcasts = () => {
       </div>
       <div className={style.third_row}>
         <div className={style.add_button}>
-          <AddButton text={'Add Podcast'} />
+          <Link to={{pathname: '/podcast/add'}}>
+            <AddButton text={'Add Podcast'} />
+          </Link>
         </div>
         <div className={style.card_container}>
           {podcasts.map((podcastItem) => {

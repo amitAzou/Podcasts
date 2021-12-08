@@ -12,3 +12,5 @@ export const editPodcast = (id, data) =>
   axios.put(`/podcast/${id}`, data).then(({data}) => data)
 export const deletePodcast = (id) =>
   axios.delete(`/podcast/${id}`).then(({data}) => data)
+export const addPodcast = (data) =>
+  axios.post('/podcast/new', data).then(({data}) => data)
