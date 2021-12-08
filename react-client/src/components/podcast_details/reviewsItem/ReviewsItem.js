@@ -16,6 +16,7 @@ const ReviewsItem = () => {
       setReviews(data)
     } catch (err) {
       setReviews([])
+      console.error(err)
     }
   }
 

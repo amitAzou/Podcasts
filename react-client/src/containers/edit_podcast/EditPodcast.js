@@ -41,7 +41,7 @@ const EditPodcast = () => {
       await editPodcast(id, podcastDetails)
       setRedirect(`/podcast/${id}`)
     } catch (err) {
-      console.log(err)
+      console.error(err)
       setRedirect(`/podcast/edit-podcast/${id}`)
     }
   }
@@ -52,7 +52,7 @@ const EditPodcast = () => {
       setRedirect(`/`)
     } catch (err) {
       setRedirect(`/podcast/edit-podcast/${id}`)
-      console.log(err)
+      console.error(err)
     }
   }
 

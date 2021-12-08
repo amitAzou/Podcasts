@@ -14,6 +14,7 @@ const PodcastItem = () => {
       setPodcasts(data)
     } catch (err) {
       setPodcasts([])
+      console.error(err)
     }
   }
 
