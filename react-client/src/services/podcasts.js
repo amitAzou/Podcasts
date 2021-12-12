@@ -16,3 +16,5 @@ export const addPodcast = (data) =>
   axios.post('/podcast/new', data).then(({data}) => data)
 export const getToken = ({username, password}) =>
   axios.post(`login/${username}/${password}`).then(({data}) => data)
+export const addReview = (data) =>
+  axios.post(`/reviews/new`, data).then(({data}) => data)

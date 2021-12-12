@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import style from './ReviewsItem.module.scss'
 import {getReviews} from '../../../services/podcasts'
-import {useLocation} from 'react-router-dom'
+import {useLocation, Link} from 'react-router-dom'
 import SingleReview from './SingleReview/SingleReview'
 import AddButton from '../../common/AddButton/AddButton'
 
@@ -28,7 +28,9 @@ const ReviewsItem = () => {
       <div className={style.first_row}>
         <h2 className={style.title}>Podcast Reviews</h2>
         <div className={style.add}>
-          <AddButton text={'Add Review'} />
+          <Link to={{pathname: `/podcast/add-review/${id}`}}>
+            <AddButton text={'Add Review'} />
+          </Link>
         </div>
       </div>
       <div className={style.second_row}>

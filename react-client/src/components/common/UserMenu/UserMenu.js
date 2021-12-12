@@ -1,19 +1,22 @@
 import React from 'react'
 import style from './UserMenu.module.scss'
+import {Link} from 'react-router-dom'
 
 const UserMenu = () => {
   return (
-    <nav className="navigation">
-      <div className={style.drop_down}>
-        <button>
-          Amit Azoulay <i className={style.arrow} />
-        </button>
-        <ul>
-          <li>logout</li>
-          <li>My Pod-Space</li>
-        </ul>
+    <div className={style.drop_down}>
+      <button>
+        Amit Azoulay <i className={style.arrow} />
+      </button>
+      <div className={style.list}>
+        <Link to="/login">
+          <div className={style.item}>logout</div>
+        </Link>
+        <Link to="/podcast">
+          <div className={style.item}>My Pod-Space</div>
+        </Link>
       </div>
-    </nav>
+    </div>
   )
 }
 
