@@ -2,12 +2,12 @@ import React, {useEffect, useState} from 'react'
 import style from './EditPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
-import {useLocation, Link} from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 import {deletePodcast, editPodcast, getPodcast} from '../../services/podcasts'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
-  const [redirect, setRedirect] = useState('')
+  const navigate = useNavigate()
 
   const location = useLocation()
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
@@ -24,7 +24,7 @@ const EditPodcast = () => {
 
   useEffect(() => {
     setInitialDetails()
-  })
+  }, [])
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -40,19 +40,17 @@ const EditPodcast = () => {
   const savePodcast = async () => {
     try {
       await editPodcast(id, podcastDetails)
-      setRedirect(`/podcast/${id}`)
     } catch (err) {
       console.error(err)
-      setRedirect(`/podcast/edit-podcast/${id}`)
+      navigate(`/podcast/edit-podcast/${id}`)
     }
   }
 
   const deleteCurrent = async () => {
     try {
       await deletePodcast(id)
-      setRedirect(`/`)
     } catch (err) {
-      setRedirect(`/podcast/edit-podcast/${id}`)
+      navigate(`/podcast/edit-podcast/${id}`)
       console.error(err)
     }
   }
@@ -69,11 +67,9 @@ const EditPodcast = () => {
       <div className={style.second_row}>
         <div className={style.form_box}>
           <div className={style.pod_info}>
-            <Link to={{pathname: redirect}} onClick={deleteCurrent}>
-              <div className={style.delete}>
-                <span className={style.delete_text}>Delete Podcast</span>
-              </div>
-            </Link>
+            <button className={style.delete} onClick={deleteCurrent}>
+              <span className={style.delete_text}>Delete Podcast</span>
+            </button>
             <div className={style.params}>
               <input
                 onChange={handleChange}
@@ -88,7 +84,6 @@ const EditPodcast = () => {
               />
               <textarea
                 onChange={handleChange}
-                type="text"
                 name="htmlDescription"
                 placeholder="Html Description"
               />
@@ -135,9 +130,9 @@ const EditPodcast = () => {
                 placeholder="Category"
               />
               <div className={style.action}>
-                <Link to={{pathname: redirect}} onClick={savePodcast}>
-                  <div className={style.submit}>Submit</div>
-                </Link>
+                <button className={style.submit} onClick={savePodcast}>
+                  Submit
+                </button>
               </div>
             </div>
           </div>

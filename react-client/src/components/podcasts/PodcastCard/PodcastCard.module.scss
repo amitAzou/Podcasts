@@ -13,7 +13,7 @@
 
     &:hover {
         p {
-            overflow: visible;
+            display: block;
         }
     }
 
@@ -21,7 +21,7 @@
 
 .description {
     order: 2;
-    overflow: hidden;
+    display: none;
     background-color: #1e1e1e;
     border-radius: 5px;
     text-align: center;
