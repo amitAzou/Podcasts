@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-
     "prettier": "2.5.0",
     "prop-types": "^15.7.2",
     "react-router-dom": "^6.0.2"
