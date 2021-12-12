@@ -8,6 +8,7 @@ import {useNavigate} from 'react-router-dom'
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({})
+  const [isCorrect, setCorrect] = useState(false)
   const navigate = useNavigate()
 
   const handleChange = (event) => {
@@ -24,14 +25,10 @@ const LoginPage = () => {
   const submitLogin = async () => {
     try {
       window.token = await getToken(credentials)
-      if (window.token === null) {
-        navigate('/login')
-      } else {
-        navigate('/podcast')
-      }
+      navigate('/podcast')
     } catch (err) {
+      setCorrect(true)
       console.error(err)
-      navigate('/login')
     }
   }
 
@@ -64,9 +61,11 @@ const LoginPage = () => {
           </div>
           <div className={style.sign_up}>
             <button className={style.submit} onClick={submitLogin}>
-              {' '}
               Log In
             </button>
+            {isCorrect && (
+              <div className={style.errMsg}>username or password incorrect</div>
+            )}
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import {useNavigate} from 'react-router-dom'
 
 const AddPodcast = () => {
   const [podcast, setPodcast] = useState({})
+
   const navigate = useNavigate()
 
   const handleChange = (event) => {

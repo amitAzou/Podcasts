@@ -14,7 +14,11 @@ axios.interceptors.request.use(
 
 axios.interceptors.response.use(
   (res) => res,
-  () => {
-    window.location.href = '/login'
+  (err) => {
+    if (err === 401) {
+      window.location.href = '/login'
+    } else {
+      return Promise.reject(err)
+    }
   }
 )
