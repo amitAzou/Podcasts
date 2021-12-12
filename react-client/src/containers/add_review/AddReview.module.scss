@@ -1,11 +1,4 @@
-.layout {
-  display: flex;
-  flex-direction: column;
-  background-color: #1e1e1e;
-  justify-content: space-between;
-  align-content: center;
-
-  .top_row {
+.top_row {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -98,7 +91,4 @@
       }
     }
   }
-
-
-}
 

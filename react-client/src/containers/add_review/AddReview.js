@@ -3,11 +3,11 @@ import style from './AddReview.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {addReview} from '../../services/podcasts'
-import {Link, useLocation} from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 
 const AddReview = () => {
   const [review, setReview] = useState({})
-  const [redirect, setRedirect] = useState('')
+  const navigate = useNavigate()
 
   const location = useLocation()
   const id = location.pathname.replace('/podcast/add-review/', '')
@@ -36,10 +36,10 @@ const AddReview = () => {
   const saveReview = async () => {
     try {
       await addReview(review)
-      setRedirect('/podcast')
+      navigate(`/podcast/${id}`)
     } catch (err) {
       console.log(err)
-      setRedirect(`/reviews/add-review/${id}`)
+      navigate(`/reviews/add-review/${id}`)
     }
   }
 
@@ -74,9 +74,9 @@ const AddReview = () => {
                 cols="30"
                 placeholder="enter your text here..."
               />
-              <Link to={{pathname: redirect}} onClick={saveReview}>
-                <div className={style.submit}>Submit</div>
-              </Link>
+              <button className={style.submit} onClick={saveReview}>
+                Submit
+              </button>
             </div>
           </div>
         </div>
