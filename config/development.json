@@ -18,7 +18,7 @@
             "password": "Anna!010"
       },
       "authentication": {
-            "isAuthenticationEnabled": true,
+            "isAuthenticationEnabled": false,
             "secret": "Auth-Secret",
             "loginUrl": "/login"
       }

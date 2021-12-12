@@ -90,7 +90,7 @@
   /* Position the add review text */
   position: absolute;
   right:35px;
-  top:5px;
+  top:10px;
 }
 
 .delete {
@@ -101,6 +101,7 @@
   border: none;
   cursor: pointer;
   right:180px;
+
 
   &:after {
     position: absolute;

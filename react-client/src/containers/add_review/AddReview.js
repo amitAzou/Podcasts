@@ -10,7 +10,7 @@ const AddReview = () => {
   const [redirect, setRedirect] = useState('')
 
   const location = useLocation()
-  const id = location.pathname.replace('/podcast/edit-podcast/', '')
+  const id = location.pathname.replace('/podcast/add-review/', '')
 
   const setInitialDetails = async () => {
     try {
@@ -36,15 +36,16 @@ const AddReview = () => {
   const saveReview = async () => {
     try {
       await addReview(review)
+      setRedirect('/podcast')
     } catch (err) {
       console.log(err)
-      setRedirect('/reviews/add-review')
+      setRedirect(`/reviews/add-review/${id}`)
     }
   }
 
   useEffect(() => {
     setInitialDetails()
-  })
+  }, [])
 
   return (
     <div className={style.layout}>
@@ -62,12 +63,13 @@ const AddReview = () => {
             <div className={style.params}>
               <input
                 onChange={handleChange}
+                name="rating"
                 type="number"
                 placeholder="rating"
               />
               <textarea
                 onChange={handleChange}
-                name="rating"
+                name="text"
                 rows="10"
                 cols="30"
                 placeholder="enter your text here..."

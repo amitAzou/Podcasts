@@ -11,7 +11,7 @@ const Search = ({setPodcasts}) => {
       const data = await searchPodcasts(searchValue)
       setPodcasts(data)
     } catch (err) {
-      console.log(err)
+      console.error(err)
     }
   }
 
