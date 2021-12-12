@@ -40,6 +40,7 @@ const EditPodcast = () => {
   const savePodcast = async () => {
     try {
       await editPodcast(id, podcastDetails)
+      navigate(`/podcast/${id}`)
     } catch (err) {
       console.error(err)
       navigate(`/podcast/edit-podcast/${id}`)
@@ -49,6 +50,7 @@ const EditPodcast = () => {
   const deleteCurrent = async () => {
     try {
       await deletePodcast(id)
+      navigate('/podcast')
     } catch (err) {
       navigate(`/podcast/edit-podcast/${id}`)
       console.error(err)

@@ -3,11 +3,11 @@ import style from './AddPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {addPodcast} from '../../services/podcasts'
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 const AddPodcast = () => {
   const [podcast, setPodcast] = useState({})
-  const [redirect, setRedirect] = useState('')
+  const navigate = useNavigate()
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -23,10 +23,10 @@ const AddPodcast = () => {
   const savePodcast = async () => {
     try {
       await addPodcast(podcast)
-      setRedirect(`/podcast`)
+      navigate(`/podcast`)
     } catch (err) {
       console.log(err)
-      setRedirect(`/podcast/add/`)
+      navigate(`/podcast/add/`)
     }
   }
 
@@ -104,9 +104,7 @@ const AddPodcast = () => {
             />
           </div>
           <div className={style.submit}>
-            <Link to={{pathname: redirect}} onClick={savePodcast}>
-              <button type="submit">Submit</button>
-            </Link>
+            <button onClick={savePodcast}>Submit</button>
           </div>
         </div>
       </div>
