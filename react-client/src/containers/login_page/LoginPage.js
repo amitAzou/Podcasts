@@ -8,7 +8,7 @@ import {useNavigate} from 'react-router-dom'
 
 const LoginPage = () => {
   const [credentials, setCredentials] = useState({})
-  const [isCorrect, setCorrect] = useState(false)
+  const [isLoginSuccess, setLoginSuccessStatus] = useState(false)
   const navigate = useNavigate()
 
   const handleChange = (event) => {
@@ -24,11 +24,19 @@ const LoginPage = () => {
 
   const submitLogin = async () => {
     try {
-      window.token = await getToken(credentials)
+      const token = await getToken(credentials)
+      localStorage.setItem('token', token)
+      localStorage.setItem('username', credentials.username)
       navigate('/podcast')
     } catch (err) {
-      setCorrect(true)
+      setLoginSuccessStatus(true)
       console.error(err)
+    }
+  }
+
+  const handleEnter = async (event) => {
+    if (event.key === 'Enter') {
+      await submitLogin()
     }
   }
 
@@ -43,6 +51,7 @@ const LoginPage = () => {
           <div className={style.input_placeHolder}>
             <input
               className={style.login_input}
+              onKeyDown={handleEnter}
               onChange={handleChange}
               name="username"
               type="text"
@@ -52,6 +61,7 @@ const LoginPage = () => {
 
           <div className={style.input_placeHolder}>
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               name="password"
               className={style.login_input}
@@ -63,7 +73,7 @@ const LoginPage = () => {
             <button className={style.submit} onClick={submitLogin}>
               Log In
             </button>
-            {isCorrect && (
+            {isLoginSuccess && (
               <div className={style.errMsg}>username or password incorrect</div>
             )}
           </div>

@@ -5,7 +5,7 @@ const authenticateController = async (req, res, next) => {
     const {username, password} = req.params
     const token = await authenticate(username, password)
     if (!token) {
-      return res.status(404).send('Username or password invalid')
+      return next(new Error("'username or password invalid"))
     } else {
       return res.status(200).send(token)
     }

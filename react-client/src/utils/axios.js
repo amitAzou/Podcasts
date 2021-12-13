@@ -2,8 +2,7 @@ import axios from 'axios'
 
 axios.interceptors.request.use(
   (req) => {
-    const token = window.token
-    req.headers.Authorization = token
+    req.headers.Authorization = localStorage.getItem('token')
     return req
   },
   (err) => {
@@ -14,11 +13,13 @@ axios.interceptors.request.use(
 
 axios.interceptors.response.use(
   (res) => res,
-  (err) => {
-    if (err === 401) {
+  (error) => {
+    if (error.response.status === 401) {
+      console.error(error)
       window.location.href = '/login'
     } else {
-      return Promise.reject(err)
+      console.error(error.response.status)
+      return Promise.reject(error)
     }
   }
 )

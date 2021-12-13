@@ -7,7 +7,7 @@ const authenticateToken = async (req, res, next) => {
     !req.url.includes(config.authentication.loginUrl)
   ) {
     const token = req.headers.authorization
-    if (token === 'undefined') {
+    if (!token) {
       return res.status(401).send('No Token given')
     } else {
       const verify = await verifyToken(token)

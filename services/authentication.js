@@ -5,7 +5,7 @@ const config = require('config')
 const authenticate = async (username, password) => {
   const authenticationStatus = await authenticateUser(username, password)
   if (authenticationStatus.length === 0) {
-    return undefined
+    return null
   } else {
     const user = {name: username, exp: Math.floor(Date.now() / 1000) + 60 * 60}
     return jwt.sign(user, config.authentication.secret)

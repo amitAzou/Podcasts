@@ -18,6 +18,7 @@ const AddReview = () => {
         podcastId: id,
       })
     } catch (err) {
+      console.error(err)
       setReview({})
     }
   }
@@ -38,8 +39,14 @@ const AddReview = () => {
       await addReview(review)
       navigate(`/podcast/${id}`)
     } catch (err) {
-      console.log(err)
+      console.error(err)
       navigate(`/reviews/add-review/${id}`)
+    }
+  }
+
+  const handleEnter = async (event) => {
+    if (event.key === 'Enter') {
+      await saveReview()
     }
   }
 
@@ -62,12 +69,14 @@ const AddReview = () => {
           <div className={style.review_box}>
             <div className={style.params}>
               <input
+                onKeyDown={handleEnter}
                 onChange={handleChange}
                 name="rating"
                 type="number"
                 placeholder="rating"
               />
               <textarea
+                onKeyDown={handleEnter}
                 onChange={handleChange}
                 name="text"
                 rows="10"

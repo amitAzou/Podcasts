@@ -31,6 +31,12 @@ const AddPodcast = () => {
     }
   }
 
+  const handleEnter = async (event) => {
+    if (event.key === 'Enter') {
+      await savePodcast()
+    }
+  }
+
   return (
     <div className={style.layout}>
       <div className={style.top_row}>
@@ -44,60 +50,70 @@ const AddPodcast = () => {
         <div className={style.add_box}>
           <div className={style.params}>
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Title"
               name="title"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Description"
               name="description"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Html Description"
               name="htmlDescription"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Web Url"
               name="webUrl"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Image Url"
               name="imageUrl"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Language"
               name="language"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="number"
               placeholder="Number Of Episodes"
               name="numberOfEpisodes"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="number"
               placeholder="Avg Episode Length"
               name="avgEpisodeLength"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Author"
               name="author"
             />
             <input
+              onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               placeholder="Category"
