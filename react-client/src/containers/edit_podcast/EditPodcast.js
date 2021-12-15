@@ -4,6 +4,7 @@ import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {useLocation, useNavigate} from 'react-router-dom'
 import {deletePodcast, editPodcast, getPodcast} from '../../services/podcasts'
+import CopyRight from '../../components/common/CopyRight/CopyRight'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
@@ -23,7 +24,11 @@ const EditPodcast = () => {
   }
 
   useEffect(() => {
-    setInitialDetails()
+    if (!localStorage.getItem('token')) {
+      navigate('/login')
+    } else {
+      setInitialDetails()
+    }
   }, [])
 
   const handleChange = (event) => {
@@ -155,6 +160,9 @@ const EditPodcast = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={style.third_row}>
+        <CopyRight />
       </div>
     </div>
   )

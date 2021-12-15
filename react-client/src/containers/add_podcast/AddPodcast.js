@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import style from './AddPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {addPodcast} from '../../services/podcasts'
 import {useNavigate} from 'react-router-dom'
+import CopyRight from '../../components/common/CopyRight/CopyRight'
 
 const AddPodcast = () => {
   const [podcast, setPodcast] = useState({})
@@ -20,6 +21,12 @@ const AddPodcast = () => {
       }
     })
   }
+
+  useEffect(() => {
+    if (!localStorage.getItem('token')) {
+      navigate('/login')
+    }
+  }, [])
 
   const savePodcast = async () => {
     try {
@@ -124,6 +131,9 @@ const AddPodcast = () => {
             <button onClick={savePodcast}>Submit</button>
           </div>
         </div>
+      </div>
+      <div className={style.third_row}>
+        <CopyRight />
       </div>
     </div>
   )

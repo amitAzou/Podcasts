@@ -4,6 +4,7 @@ import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {addReview} from '../../services/podcasts'
 import {useLocation, useNavigate} from 'react-router-dom'
+import CopyRight from '../../components/common/CopyRight/CopyRight'
 
 const AddReview = () => {
   const [review, setReview] = useState({})
@@ -51,7 +52,11 @@ const AddReview = () => {
   }
 
   useEffect(() => {
-    setInitialDetails()
+    if (!localStorage.getItem('token')) {
+      navigate('/login')
+    } else {
+      setInitialDetails()
+    }
   }, [])
 
   return (
@@ -88,6 +93,9 @@ const AddReview = () => {
               </button>
             </div>
           </div>
+        </div>
+        <div className={style.third_row}>
+          <CopyRight />
         </div>
       </div>
     </div>

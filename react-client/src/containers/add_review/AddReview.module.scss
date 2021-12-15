@@ -1,3 +1,9 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .top_row {
     display: flex;
     justify-content: space-between;
@@ -91,4 +97,9 @@
       }
     }
   }
+
+.third_row {
+  position: relative;
+  top:300px;
+}
 

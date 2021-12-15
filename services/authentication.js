@@ -15,6 +15,7 @@ const authenticate = async (username, password) => {
 const verifyToken = async (token) => {
   jwt.verify(token, config.authentication.secret, (err) => {
     if (err) {
+      console.error(err)
       return false
     }
   })

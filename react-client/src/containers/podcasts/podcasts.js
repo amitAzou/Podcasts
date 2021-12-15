@@ -8,10 +8,12 @@ import UserMenu from '../../components/common/UserMenu/UserMenu'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
 import AddButton from '../../components/common/AddButton/AddButton'
 import logo from '../../images/mic_logo.png'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 const Podcasts = () => {
   const [podcasts, setPodcasts] = useState([])
+  const navigate = useNavigate()
+
   async function setData() {
     try {
       const data = await getPodcastsByRating()
@@ -23,7 +25,11 @@ const Podcasts = () => {
   }
 
   useEffect(() => {
-    setData()
+    if (!localStorage.getItem('token')) {
+      navigate('/login')
+    } else {
+      setData()
+    }
   }, [])
 
   return (
