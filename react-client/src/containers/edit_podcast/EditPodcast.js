@@ -80,83 +80,90 @@ const EditPodcast = () => {
       <div className={style.second_row}>
         <div className={style.form_box}>
           <div className={style.pod_info}>
-            <button className={style.delete} onClick={deleteCurrent}>
+            <button className={style.delete}>
+              <div className={style.delete_box}>
+                <p>Are You Sure ?</p>
+                <div className={style.delete_box_buttons}>
+                  <button onClick={deleteCurrent}>Yes</button>
+                  <button>No</button>
+                </div>
+              </div>
               <span className={style.delete_text}>Delete Podcast</span>
             </button>
-            <div className={style.params}>
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                name="title"
-                placeholder="Title"
-              />
-              <textarea
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                name="description"
-                placeholder="Description"
-              />
-              <textarea
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                name="htmlDescription"
-                placeholder="Html Description"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                name="webUrl"
-                placeholder="Web Url"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                id="imageUrl"
-                placeholder="Image Url"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                name="language"
-                placeholder="Language"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="number"
-                id="numOfEpisodes"
-                placeholder="Number Of Episodes"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="number"
-                name="avgEpisodeLength"
-                placeholder="Avg Episode Length"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                name="author"
-                placeholder="Author"
-              />
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                type="text"
-                name="category"
-                placeholder="Category"
-              />
-              <div className={style.action}>
-                <button className={style.submit} onClick={savePodcast}>
-                  Submit
-                </button>
-              </div>
+          </div>
+          <div className={style.params}>
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="title"
+              placeholder="Title"
+            />
+            <textarea
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              name="description"
+              placeholder="Description"
+            />
+            <textarea
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              name="htmlDescription"
+              placeholder="Html Description"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="webUrl"
+              placeholder="Web Url"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              id="imageUrl"
+              placeholder="Image Url"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="language"
+              placeholder="Language"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="number"
+              id="numOfEpisodes"
+              placeholder="Number Of Episodes"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="number"
+              name="avgEpisodeLength"
+              placeholder="Avg Episode Length"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="author"
+              placeholder="Author"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="category"
+              placeholder="Category"
+            />
+            <div className={style.action}>
+              <button className={style.submit} onClick={savePodcast}>
+                Submit
+              </button>
             </div>
           </div>
         </div>
