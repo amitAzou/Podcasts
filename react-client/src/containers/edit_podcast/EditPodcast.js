@@ -3,15 +3,25 @@ import style from './EditPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
 import {useLocation, useNavigate} from 'react-router-dom'
-import {deletePodcast, editPodcast, getPodcast} from '../../services/podcasts'
+import {editPodcast, getPodcast} from '../../services/podcasts'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
+import DeleteBox from '../../components/edit_podcast/DeleteBox'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
+  const [showDelete, setDelete] = useState(false)
   const navigate = useNavigate()
 
   const location = useLocation()
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
+
+  const showDeleteBox = () => {
+    if (showDelete === false) {
+      setDelete(true)
+    } else {
+      setDelete(false)
+    }
+  }
 
   const setInitialDetails = async () => {
     try {
@@ -52,16 +62,6 @@ const EditPodcast = () => {
     }
   }
 
-  const deleteCurrent = async () => {
-    try {
-      await deletePodcast(id)
-      navigate('/podcast')
-    } catch (err) {
-      navigate(`/podcast/edit-podcast/${id}`)
-      console.error(err)
-    }
-  }
-
   const handleEnter = async (event) => {
     if (event.key === 'Enter') {
       await savePodcast()
@@ -80,16 +80,10 @@ const EditPodcast = () => {
       <div className={style.second_row}>
         <div className={style.form_box}>
           <div className={style.pod_info}>
-            <button className={style.delete}>
-              <div className={style.delete_box}>
-                <p>Are You Sure ?</p>
-                <div className={style.delete_box_buttons}>
-                  <button onClick={deleteCurrent}>Yes</button>
-                  <button>No</button>
-                </div>
-              </div>
+            <div className={style.delete} onClick={showDeleteBox}>
+              {showDelete ? <DeleteBox key={id} id={id} /> : null}
               <span className={style.delete_text}>Delete Podcast</span>
-            </button>
+            </div>
           </div>
           <div className={style.params}>
             <input
