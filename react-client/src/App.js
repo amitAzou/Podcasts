@@ -25,7 +25,7 @@ function App() {
         <Route path="/podcast/edit-podcast/*" element={<EditPodcast />} />
         <Route path="/podcast/add/*" element={<AddPodcast />} />
         <Route path="/podcast/add-review/*" element={<AddReview />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<LoginPage />} />
       </Routes>
     </Router>
   )

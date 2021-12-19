@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import style from './Podcast_details.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
@@ -10,6 +10,13 @@ import CopyRight from '../../components/common/CopyRight/CopyRight'
 const PodcastDetails = () => {
   const location = useLocation()
   const id = location.pathname.replace('/podcast/', '')
+  const [isLogged, setLogged] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      setLogged('true')
+    }
+  }, [])
 
   return (
     <div>
@@ -24,7 +31,9 @@ const PodcastDetails = () => {
         <div className={style.box_layout}>
           <PodcastItem />
           <Link to={{pathname: `/podcast/edit-podcast/${id}`}}>
-            <button className={style.edit_podcast}> Edit Podcast</button>
+            {isLogged ? (
+              <button className={style.edit_podcast}> Edit Podcast</button>
+            ) : null}
           </Link>
         </div>
         <div className={style.box_layout}>

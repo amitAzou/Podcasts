@@ -24,7 +24,7 @@ const AddPodcast = () => {
 
   useEffect(() => {
     if (!localStorage.getItem('token')) {
-      navigate('/login')
+      navigate('/podcast')
     }
   }, [])
 

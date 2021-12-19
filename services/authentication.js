@@ -2,6 +2,13 @@ const {authenticateUser} = require('../ models/authenticationModel')
 const jwt = require('jsonwebtoken')
 const config = require('config')
 
+const isProtected = async (url, method) => {
+  const result = config.protectedUrls.find(
+    (element) => element.url === url && element.method === method
+  )
+  return !!result
+}
+
 const authenticate = async (username, password) => {
   const authenticationStatus = await authenticateUser(username, password)
   if (authenticationStatus.length === 0) {
@@ -22,4 +29,4 @@ const verifyToken = async (token) => {
   return true
 }
 
-module.exports = {authenticate, verifyToken}
+module.exports = {authenticate, verifyToken, isProtected}

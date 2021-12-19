@@ -9,6 +9,7 @@ const ReviewsItem = () => {
   const [reviews, setReviews] = useState([])
   const location = useLocation()
   const id = location.pathname.replace('/podcast/', '')
+  const [isLogged, setLogged] = useState(false)
 
   async function fetchData() {
     try {
@@ -22,6 +23,9 @@ const ReviewsItem = () => {
 
   useEffect(() => {
     fetchData()
+    if (localStorage.getItem('token')) {
+      setLogged('true')
+    }
   }, [])
 
   return (
@@ -30,7 +34,7 @@ const ReviewsItem = () => {
         <h2 className={style.title}>Podcast Reviews</h2>
         <div className={style.add}>
           <Link to={{pathname: `/podcast/add-review/${id}`}}>
-            <AddButton text={'Add Review'} />
+            {isLogged ? null : <AddButton text={'Add Review'} />}
           </Link>
         </div>
       </div>

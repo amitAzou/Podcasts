@@ -20,7 +20,21 @@
       "authentication": {
             "isAuthenticationEnabled": true,
             "secret": "Auth-Secret",
-            "loginUrl": "/login"
+            "loginUrl": "/login",
+            "protectedUrls": [
+                  {
+                        "url": "/podcast/new",
+                        "method": "POST"
+                  },
+                  {
+                        "url": "/podcast/:id",
+                        "method": "DELETE"
+                  },
+                  {
+                        "url": "/podcast/:id",
+                        "method": "PUT"
+                  }
+            ]
       }
 
 }

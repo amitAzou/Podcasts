@@ -9,14 +9,7 @@ const PodcastCard = ({id, imageUrl, title, description}) => {
       <div className={style.card_cont}>
         <img className={style.image} src={imageUrl} alt={'img'} />
         <h2 className={style.title}>{title}</h2>
-        <div className={style.pod_box}>
-          <div className={style.pod_details}>
-            <h2 className={style.headline}>Title</h2>
-            <h2 className={style.small_title}>{title}</h2>
-            <h2 className={style.headline}>Description</h2>
-            <p className={style.description}>{description}</p>
-          </div>
-        </div>
+        <p className={style.description}>{description}</p>
       </div>
     </Link>
   )

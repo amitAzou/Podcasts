@@ -31,6 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         &:hover {
             background: #939393;
@@ -48,6 +49,7 @@
         align-content: center;
         justify-content: space-between;
         align-items: center;
+
     }
 
     button:hover {
