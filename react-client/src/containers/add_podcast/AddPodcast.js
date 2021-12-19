@@ -33,7 +33,7 @@ const AddPodcast = () => {
       await addPodcast(podcast)
       navigate(`/podcast`)
     } catch (err) {
-      console.log(err)
+      console.error(err)
       navigate(`/podcast/add/`)
     }
   }

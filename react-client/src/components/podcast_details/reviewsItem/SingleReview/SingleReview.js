@@ -10,7 +10,7 @@ const SingleReview = ({rating, text}) => {
         <p className={style.data}>{rating}</p>
       </div>
       <div className={style.single_element}>
-        <p className={style.head}>Text</p>
+        <p className={style.head}>Description</p>
         <p className={style.data}>{text}</p>
       </div>
     </div>

@@ -19,6 +19,7 @@ body {
         text-align: center;
         color: white;
         font-size:36px;
+        font-family: Serif, "Big Caslon", sans-serif;
     }
 
     .user_menu {
@@ -63,6 +64,11 @@ body {
         cursor: pointer;
     }
 
+    .bottom_row {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 

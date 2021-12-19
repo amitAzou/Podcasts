@@ -25,13 +25,12 @@ body {
 
 .headline {
     flex:7;
-    font-family: Monaco, sans-serif;
     display: inline;
     text-align: center;
     color: white;
     position: relative;
     left:50px;
-
+    font-family: Serif, "Big Caslon", sans-serif;
 }
 
 .mic_logo {
@@ -55,7 +54,7 @@ body {
 
 .add_button {
     position: relative;
-    right:50px;
+
     align-self: end;
 }
 
@@ -63,10 +62,10 @@ body {
     position: relative;
     font-family: "Helvetica Neue", Halvetica, sans-serif;
     color: #eb9d38;
-    height:650px;
+    height:660px;
     overflow-y: scroll;
     overflow-x:hidden;
-    width: 95%;
+    width: 100%;
     background-color: #000000;
     border-radius: 10px;
     box-shadow: 0 0 10px lightgray;

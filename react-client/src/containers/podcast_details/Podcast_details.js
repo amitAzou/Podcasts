@@ -5,6 +5,7 @@ import UserMenu from '../../components/common/UserMenu/UserMenu'
 import PodcastItem from '../../components/podcast_details/Podcast_Item/PodcastItem'
 import ReviewsItem from '../../components/podcast_details/reviewsItem/ReviewsItem'
 import {useLocation, Link} from 'react-router-dom'
+import CopyRight from '../../components/common/CopyRight/CopyRight'
 
 const PodcastDetails = () => {
   const location = useLocation()
@@ -29,6 +30,9 @@ const PodcastDetails = () => {
         <div className={style.box_layout}>
           <ReviewsItem />
         </div>
+      </div>
+      <div className={style.bottom_row}>
+        <CopyRight />
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ const EditPodcast = () => {
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
 
   const showDeleteBox = () => {
-    if (showDelete === false) {
+    if (!showDelete) {
       setDelete(true)
     } else {
       setDelete(false)

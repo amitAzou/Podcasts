@@ -69,7 +69,6 @@ const AddReview = () => {
             <UserMenu />
           </div>
         </div>
-        d
         <div className={style.second_row}>
           <div className={style.review_box}>
             <div className={style.params}>
