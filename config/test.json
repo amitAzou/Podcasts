@@ -6,6 +6,11 @@
   "reviewsPath": "data/reviews.json",
   "cacheExpiration": 1200,
   "isCacheEnabled": false,
+  "authentication": {
+    "isAuthenticationEnabled": false,
+    "secret": "Auth-Secret",
+    "loginUrl": "/login"
+  },
   "redis": {
     "host": "localhost",
     "port": 6379

@@ -1,0 +1,105 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top_row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .title {
+    order: 2;
+    display: inline;
+    position: relative;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+  }
+
+  .user_menu {
+    order: 3;
+    position: relative;
+    height: 110px;
+  }
+
+  .second_row {
+    display: flex;
+    justify-content: center;
+
+    .review_box {
+      margin-top: 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background-color: black;
+      height: 300px;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px lightgray;
+
+      .params {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+
+        input {
+          background: none;
+          border: 2px solid lightgray;
+          border-radius: 5px;
+          color: white;
+          font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
+          margin: 15px;
+          font-size: 18px;
+          text-align: center;
+          width:200px;
+        }
+
+        .submit {
+          position: relative;
+          background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+          color: #fff;
+          border-radius: 5px;
+          border: 2px solid lightgray;
+          font-size: 18px;
+          width:200px;
+          cursor: pointer;
+        }
+
+
+        textarea {
+          background-color: transparent;
+          border: 2px lightgray solid;
+          font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
+          font-size: 18px;
+          color: white;
+          width: 200px;
+          height:150px;
+        }
+
+        ::placeholder {
+          color: white;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+
+.third_row {
+  position: relative;
+  top:300px;
+}
+

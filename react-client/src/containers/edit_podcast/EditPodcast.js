@@ -2,15 +2,26 @@ import React, {useEffect, useState} from 'react'
 import style from './EditPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
-import {useLocation, Link} from 'react-router-dom'
-import {deletePodcast, editPodcast, getPodcast} from '../../services/podcasts'
+import {useLocation, useNavigate} from 'react-router-dom'
+import {editPodcast, getPodcast} from '../../services/podcasts'
+import CopyRight from '../../components/common/CopyRight/CopyRight'
+import DeleteBox from '../../components/edit_podcast/DeleteBox'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
-  const [redirect, setRedirect] = useState('')
+  const [showDelete, setDelete] = useState(false)
+  const navigate = useNavigate()
 
   const location = useLocation()
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
+
+  const showDeleteBox = () => {
+    if (showDelete === false) {
+      setDelete(true)
+    } else {
+      setDelete(false)
+    }
+  }
 
   const setInitialDetails = async () => {
     try {
@@ -23,8 +34,12 @@ const EditPodcast = () => {
   }
 
   useEffect(() => {
-    setInitialDetails()
-  })
+    if (!localStorage.getItem('token')) {
+      navigate('/login')
+    } else {
+      setInitialDetails()
+    }
+  }, [])
 
   const handleChange = (event) => {
     const {name, value} = event.target
@@ -40,20 +55,16 @@ const EditPodcast = () => {
   const savePodcast = async () => {
     try {
       await editPodcast(id, podcastDetails)
-      setRedirect(`/podcast/${id}`)
+      navigate(`/podcast/${id}`)
     } catch (err) {
       console.error(err)
-      setRedirect(`/podcast/edit-podcast/${id}`)
+      navigate(`/podcast/edit-podcast/${id}`)
     }
   }
 
-  const deleteCurrent = async () => {
-    try {
-      await deletePodcast(id)
-      setRedirect(`/`)
-    } catch (err) {
-      setRedirect(`/podcast/edit-podcast/${id}`)
-      console.error(err)
+  const handleEnter = async (event) => {
+    if (event.key === 'Enter') {
+      await savePodcast()
     }
   }
 
@@ -69,79 +80,90 @@ const EditPodcast = () => {
       <div className={style.second_row}>
         <div className={style.form_box}>
           <div className={style.pod_info}>
-            <Link to={{pathname: redirect}} onClick={deleteCurrent}>
-              <div className={style.delete}>
-                <span className={style.delete_text}>Delete Podcast</span>
-              </div>
-            </Link>
-            <div className={style.params}>
-              <input
-                onChange={handleChange}
-                type="text"
-                name="title"
-                placeholder="Title"
-              />
-              <textarea
-                onChange={handleChange}
-                name="description"
-                placeholder="Description"
-              />
-              <textarea
-                onChange={handleChange}
-                type="text"
-                name="htmlDescription"
-                placeholder="Html Description"
-              />
-              <input
-                onChange={handleChange}
-                type="text"
-                name="webUrl"
-                placeholder="Web Url"
-              />
-              <input
-                onChange={handleChange}
-                type="text"
-                id="imageUrl"
-                placeholder="Image Url"
-              />
-              <input
-                onChange={handleChange}
-                type="text"
-                name="language"
-                placeholder="Language"
-              />
-              <input
-                onChange={handleChange}
-                type="number"
-                id="numOfEpisodes"
-                placeholder="Number Of Episodes"
-              />
-              <input
-                onChange={handleChange}
-                type="number"
-                name="avgEpisodeLength"
-                placeholder="Avg Episode Length"
-              />
-              <input
-                onChange={handleChange}
-                type="text"
-                name="author"
-                placeholder="Author"
-              />
-              <input
-                onChange={handleChange}
-                type="text"
-                name="category"
-                placeholder="Category"
-              />
-              <div className={style.action}>
-                <Link to={{pathname: redirect}} onClick={savePodcast}>
-                  <div className={style.submit}>Submit</div>
-                </Link>
-              </div>
+            <div className={style.delete} onClick={showDeleteBox}>
+              {showDelete ? <DeleteBox key={id} id={id} /> : null}
+              <span className={style.delete_text}>Delete Podcast</span>
+            </div>
+          </div>
+          <div className={style.params}>
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="title"
+              placeholder="Title"
+            />
+            <textarea
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              name="description"
+              placeholder="Description"
+            />
+            <textarea
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              name="htmlDescription"
+              placeholder="Html Description"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="webUrl"
+              placeholder="Web Url"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              id="imageUrl"
+              placeholder="Image Url"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="language"
+              placeholder="Language"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="number"
+              id="numOfEpisodes"
+              placeholder="Number Of Episodes"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="number"
+              name="avgEpisodeLength"
+              placeholder="Avg Episode Length"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="author"
+              placeholder="Author"
+            />
+            <input
+              onKeyDown={handleEnter}
+              onChange={handleChange}
+              type="text"
+              name="category"
+              placeholder="Category"
+            />
+            <div className={style.action}>
+              <button className={style.submit} onClick={savePodcast}>
+                Submit
+              </button>
             </div>
           </div>
         </div>
+      </div>
+      <div className={style.third_row}>
+        <CopyRight />
       </div>
     </div>
   )

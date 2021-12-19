@@ -1,11 +1,11 @@
-const { authenticate } = require('../services/authentication')
+const {authenticate} = require('../services/authentication')
 
 const authenticateController = async (req, res, next) => {
   try {
-    const { username, password } = req.params
+    const {username, password} = req.params
     const token = await authenticate(username, password)
-    if (token === null) {
-      return res.status(404).send('Username or password invalid')
+    if (!token) {
+      return next(new Error("'username or password invalid"))
     } else {
       return res.status(200).send(token)
     }
@@ -14,4 +14,4 @@ const authenticateController = async (req, res, next) => {
   }
 }
 
-module.exports = { authenticateController }
+module.exports = {authenticateController}
