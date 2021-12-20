@@ -16,20 +16,19 @@ body {
 }
 
 .user_menu {
-    flex:1;
+
     order:3;
     position: relative;
     height: 110px;
-    left:100px;
+    align-self: end;
+
 }
 
 .headline {
-    flex:7;
     display: inline;
     text-align: center;
     color: white;
     position: relative;
-    left:50px;
     font-family: Serif, "Big Caslon", sans-serif;
 }
 

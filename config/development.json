@@ -27,11 +27,11 @@
                         "method": "POST"
                   },
                   {
-                        "url": "/podcast/:id",
+                        "url": "/podcast/",
                         "method": "DELETE"
                   },
                   {
-                        "url": "/podcast/:id",
+                        "url": "/podcast/",
                         "method": "PUT"
                   }
             ]

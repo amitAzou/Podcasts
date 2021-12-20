@@ -2,7 +2,8 @@ const config = require('config')
 const {verifyToken, isProtected} = require('../services/authentication')
 
 const authenticateToken = async (req, res, next) => {
-  if (isProtected(req.url, req.method)) {
+  const result = await isProtected(req.url, req.method)
+  if (!result) {
     return next()
   }
   if (

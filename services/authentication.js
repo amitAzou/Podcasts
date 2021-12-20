@@ -3,10 +3,9 @@ const jwt = require('jsonwebtoken')
 const config = require('config')
 
 const isProtected = async (url, method) => {
-  const result = config.protectedUrls.find(
-    (element) => element.url === url && element.method === method
+  return config.authentication.protectedUrls.find(
+    (element) => url.startsWith(element.url) && method === element.method
   )
-  return !!result
 }
 
 const authenticate = async (username, password) => {
