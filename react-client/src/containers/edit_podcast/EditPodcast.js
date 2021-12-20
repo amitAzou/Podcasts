@@ -6,11 +6,12 @@ import {useLocation, useNavigate} from 'react-router-dom'
 import {editPodcast, getPodcast} from '../../services/podcasts'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
 import DeleteBox from '../../components/edit_podcast/DeleteBox'
+import {authenticate} from '../../services/authentication'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
   const [showDelete, setDelete] = useState(false)
-  const [isLogged, setLogged] = useState(false)
+  const [isLoggedIn, setLoggedIn] = useState(false)
   const navigate = useNavigate()
 
   const location = useLocation()
@@ -36,9 +37,7 @@ const EditPodcast = () => {
 
   useEffect(() => {
     setInitialDetails()
-    if (localStorage.getItem('token')) {
-      setLogged('true')
-    }
+    authenticate(setLoggedIn)
   }, [])
 
   const handleChange = (event) => {
@@ -81,7 +80,7 @@ const EditPodcast = () => {
         <div className={style.form_box}>
           <div className={style.pod_info}>
             <div>
-              {isLogged ? (
+              {isLoggedIn ? (
                 <div className={style.delete} onClick={showDeleteBox}>
                   {showDelete ? <DeleteBox key={id} id={id} /> : null}
                   <span className={style.delete_text}>Delete Podcast</span>

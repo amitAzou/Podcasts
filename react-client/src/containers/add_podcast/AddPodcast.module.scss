@@ -40,8 +40,8 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: black;
-    height: 600px;
-    width: 600px;
+    height: auto;
+    width: 700px;
     border-radius: 10px;
     box-shadow: 0 0 20px lightgray;
 
@@ -60,6 +60,17 @@
         font-size: 18px;
         text-align: center;
         width: 50%;
+      }
+      textarea {
+        background-color: transparent;
+        border: 2px lightgray solid;
+        font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
+        font-size: 18px;
+        color: white;
+        width: 50%;
+        height: 100px;
+        text-align: center;
+        margin: 1rem;
       }
     }
 

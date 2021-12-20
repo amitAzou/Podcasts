@@ -9,9 +9,11 @@ import CopyRight from '../../components/common/CopyRight/CopyRight'
 import AddButton from '../../components/common/AddButton/AddButton'
 import logo from '../../images/mic_logo.png'
 import {Link} from 'react-router-dom'
+import {authenticate} from '../../services/authentication'
 
 const Podcasts = () => {
   const [podcasts, setPodcasts] = useState([])
+  const [isLoggedIn, setLoggedIn] = useState(false)
 
   async function setData() {
     try {
@@ -24,6 +26,7 @@ const Podcasts = () => {
   }
 
   useEffect(() => {
+    authenticate(setLoggedIn)
     setData()
   }, [])
 
@@ -46,9 +49,11 @@ const Podcasts = () => {
       </div>
       <div className={style.third_row}>
         <div className={style.add_button}>
-          <Link to={{pathname: '/podcast/add'}}>
-            <AddButton text={'Add Podcast'} />
-          </Link>
+          {isLoggedIn ? (
+            <Link to={{pathname: '/podcast/add'}}>
+              <AddButton text={'Add Podcast'} />
+            </Link>
+          ) : null}
         </div>
         <div className={style.card_container}>
           {podcasts.map((podcastItem) => {

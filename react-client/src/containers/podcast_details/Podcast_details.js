@@ -6,16 +6,15 @@ import PodcastItem from '../../components/podcast_details/Podcast_Item/PodcastIt
 import ReviewsItem from '../../components/podcast_details/reviewsItem/ReviewsItem'
 import {useLocation, Link} from 'react-router-dom'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
+import {authenticate} from '../../services/authentication'
 
 const PodcastDetails = () => {
   const location = useLocation()
   const id = location.pathname.replace('/podcast/', '')
-  const [isLogged, setLogged] = useState(false)
+  const [isLoggedIn, setLoggedIn] = useState(false)
 
   useEffect(() => {
-    if (localStorage.getItem('token')) {
-      setLogged('true')
-    }
+    authenticate(setLoggedIn)
   }, [])
 
   return (
@@ -31,7 +30,7 @@ const PodcastDetails = () => {
         <div className={style.box_layout}>
           <PodcastItem />
           <Link to={{pathname: `/podcast/edit-podcast/${id}`}}>
-            {isLogged ? (
+            {isLoggedIn ? (
               <button className={style.edit_podcast}> Edit Podcast</button>
             ) : null}
           </Link>

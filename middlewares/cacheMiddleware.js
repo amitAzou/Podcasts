@@ -12,22 +12,35 @@ const saveToCache = async (key, value) => {
   await cache.expire(key, config.cacheExpiration)
 }
 
+const removeFromCache = async (key) => {
+  await cache.del(key)
+}
+
 const getItemFromCache = async (req, res, next) => {
+  const key = req.url
   if (config.isCacheEnabled && req.method === 'GET') {
-    const key = req.url
     const result = await cache.get(key)
     if (result) {
       return res.status(200).send(JSON.parse(result))
     } else {
       const sendResponse = res.send
       res.send = (body) => {
-        saveToCache(key, body)
+        if (res.status === 200) {
+          saveToCache(key, body)
+        }
         res.send = sendResponse
         res.send(body)
+      }
+    }
+  } else {
+    if (req.method === 'PUT' || req.method === 'DELETE') {
+      const result = await cache.get(key)
+      if (result) {
+        await removeFromCache(key)
       }
     }
   }
   next()
 }
 
-module.exports = { getItemFromCache }
+module.exports = {getItemFromCache}

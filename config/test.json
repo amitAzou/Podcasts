@@ -5,7 +5,7 @@
   "filePath" : "data/podcasts.json",
   "reviewsPath": "data/reviews.json",
   "cacheExpiration": 1200,
-  "isCacheEnabled": false,
+  "isCacheEnabled": true,
   "authentication": {
     "isAuthenticationEnabled": false,
     "secret": "Auth-Secret",

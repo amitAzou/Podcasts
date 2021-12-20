@@ -11,7 +11,7 @@
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        margin-top:10px;
+
         padding-left: 0;
         width: 120px;
         height: 120px;
@@ -47,7 +47,7 @@
         width: 120px;
         display: flex;
         align-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
     }
@@ -69,5 +69,6 @@
         border-right: 8px solid transparent;
         border-top: 8px solid #ffffff;
         margin: 2px;
+        align-self: center;
     }
 }

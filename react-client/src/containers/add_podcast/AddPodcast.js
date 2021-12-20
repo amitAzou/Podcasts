@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import style from './AddPodcast.module.scss'
 import SiteLogo from '../../components/common/SiteLogo/SiteLogo'
 import UserMenu from '../../components/common/UserMenu/UserMenu'
@@ -21,12 +21,6 @@ const AddPodcast = () => {
       }
     })
   }
-
-  useEffect(() => {
-    if (!localStorage.getItem('token')) {
-      navigate('/podcast')
-    }
-  }, [])
 
   const savePodcast = async () => {
     try {
@@ -63,17 +57,15 @@ const AddPodcast = () => {
               placeholder="Title"
               name="title"
             />
-            <input
+            <textarea
               onKeyDown={handleEnter}
               onChange={handleChange}
-              type="text"
               placeholder="Description"
               name="description"
             />
-            <input
+            <textarea
               onKeyDown={handleEnter}
               onChange={handleChange}
-              type="text"
               placeholder="Html Description"
               name="htmlDescription"
             />

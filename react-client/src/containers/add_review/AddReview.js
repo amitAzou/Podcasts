@@ -52,11 +52,7 @@ const AddReview = () => {
   }
 
   useEffect(() => {
-    if (!localStorage.getItem('token')) {
-      navigate('/login')
-    } else {
-      setInitialDetails()
-    }
+    setInitialDetails()
   }, [])
 
   return (

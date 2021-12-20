@@ -5,13 +5,13 @@ import {Link, useNavigate} from 'react-router-dom'
 const UserMenu = () => {
   const navigate = useNavigate()
   const [username, setUsername] = useState('')
-  const [logStatus, setLogStatus] = useState('')
+  const [logStatus, setLogStatus] = useState(false)
 
   const logout = () => {
-    if (logStatus === 'Logout') {
+    if (logStatus === true) {
       localStorage.clear()
       getUserName()
-      navigate('/podcast')
+      window.location.reload()
     } else {
       navigate('/admin')
     }
@@ -20,11 +20,11 @@ const UserMenu = () => {
   const getUserName = () => {
     const user = localStorage.getItem('username')
     if (!user) {
-      setUsername('Menu')
-      setLogStatus('Login')
+      setUsername('User Menu')
+      setLogStatus(false)
     } else {
       setUsername(user, setUsername)
-      setLogStatus('Logout')
+      setLogStatus(true)
     }
   }
 
@@ -35,11 +35,12 @@ const UserMenu = () => {
   return (
     <div className={style.drop_down}>
       <button>
-        {username} <i className={style.arrow} />
+        {username}
+        <i className={style.arrow} />
       </button>
       <div className={style.list}>
         <div className={style.item} onClick={logout}>
-          {logStatus}
+          {logStatus ? 'Logout' : 'Login'}
         </div>
         <Link to="/podcast">
           <div className={style.item}>My Pod-Space</div>
