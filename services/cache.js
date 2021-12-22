@@ -13,13 +13,22 @@ const saveToCache = async (key, value) => {
   await cache.expire(key, config.cacheExpiration)
 }
 
-const checkUrlToClear = async (key, method) => {
+const checkUrlToClear = async (url, method) => {
   config.cache.find((element) => {
-    const regexp = pathToRegexp(element.requestUrl)
-    const isUrlToClear = regexp.exec(key)
-    if (isUrlToClear && method === element.method) {
-      element.cacheToClear.forEach(async (e) => {
-        await cache.del(e)
+    const regexp = pathToRegexp(element.requestUrl).exec(url)
+    if (regexp && method === element.method) {
+      element.cacheToClear.forEach(async (urlToDelete) => {
+        const keys = []
+        pathToRegexp(urlToDelete, keys)
+        let stringToCmp = urlToDelete
+        keys.map((key, index) => {
+          stringToCmp = stringToCmp.replace(`:${key.name}`, regexp[index + 1])
+        })
+        if (stringToCmp === url) {
+          await cache.del(stringToCmp)
+        } else {
+          await cache.del(urlToDelete)
+        }
       })
     }
   })
@@ -44,7 +53,8 @@ const getItemFromCache = async (req, res, next) => {
         }
       }
     } else {
-      await checkUrlToClear(key, method)
+      if (method === 'DELETE' || method === 'PUT')
+        await checkUrlToClear(key, method)
     }
   }
   next()
