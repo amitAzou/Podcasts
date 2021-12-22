@@ -53,7 +53,9 @@ const Podcasts = () => {
             <Link to={{pathname: '/podcast/add'}}>
               <AddButton text={'Add Podcast'} />
             </Link>
-          ) : null}
+          ) : (
+            <br />
+          )}
         </div>
         <div className={style.card_container}>
           {podcasts.map((podcastItem) => {

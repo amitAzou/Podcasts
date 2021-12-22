@@ -5,11 +5,25 @@
   "filePath" : "data/podcasts.json",
   "reviewsPath": "data/reviews.json",
   "cacheExpiration": 1200,
-  "isCacheEnabled": true,
+  "isCacheEnabled": false,
   "authentication": {
     "isAuthenticationEnabled": false,
     "secret": "Auth-Secret",
-    "loginUrl": "/login"
+    "loginUrl": "/login",
+    "protectedUrls": [
+      {
+        "url": "/podcast/new",
+        "method": "POST"
+      },
+      {
+        "url": "/podcast/:id(\\d+)",
+        "method": "DELETE"
+      },
+      {
+        "url": "/podcast/:id(\\d+)",
+        "method": "PUT"
+      }
+    ]
   },
   "redis": {
     "host": "localhost",

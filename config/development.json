@@ -6,17 +6,18 @@
       "reviewsPath": "data/reviews.json",
       "cacheExpiration": 1200,
       "static": "react-client/src",
-      "isCacheEnabled": false,
+      "isCacheEnabled": true,
       "cache": [
             {
-                  "requestUrl": "/podcast/:id",
+                  "requestUrl": "/podcast/:id(\\d+)",
                   "method": "DELETE",
-                  "cacheToClear": "/podcast/:id"
+                  "cacheToClear": ["/podcast/rating/all"]
+
             },
             {
-                  "requestUrl": "/podcast/:id",
+                  "requestUrl": "/podcast/:id(\\d+)",
                   "method": "PUT",
-                  "cacheToClear": "/podcast/:id"
+                  "cacheToClear": ["/podcast/rating/al "]
             }
       ],
       "redis": {

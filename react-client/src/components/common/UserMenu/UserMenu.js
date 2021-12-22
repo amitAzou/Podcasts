@@ -11,6 +11,7 @@ const UserMenu = () => {
     if (logStatus === true) {
       localStorage.clear()
       getUserName()
+      navigate('/podcast')
       window.location.reload()
     } else {
       navigate('/admin')
