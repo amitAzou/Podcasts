@@ -45,6 +45,10 @@ const AddReview = () => {
     }
   }
 
+  const backToDetails = async () => {
+    navigate(`/podcast/${id}`)
+  }
+
   const handleEnter = async (event) => {
     if (event.key === 'Enter') {
       await saveReview()
@@ -68,21 +72,32 @@ const AddReview = () => {
         <div className={style.second_row}>
           <div className={style.review_box}>
             <div className={style.params}>
-              <input
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                name="rating"
-                type="number"
-                placeholder="rating"
-              />
-              <textarea
-                onKeyDown={handleEnter}
-                onChange={handleChange}
-                name="text"
-                rows="10"
-                cols="30"
-                placeholder="enter your text here..."
-              />
+              <div className={style.param_component}>
+                <h2 className={style.headline}>Rate The podcast:</h2>
+                <input
+                  onKeyDown={handleEnter}
+                  onChange={handleChange}
+                  name="rating"
+                  type="number"
+                  placeholder="rating"
+                />
+              </div>
+              <div className={style.param_component}>
+                <h2 className={style.headline}>Tell us more:</h2>
+                <textarea
+                  onKeyDown={handleEnter}
+                  onChange={handleChange}
+                  name="text"
+                  rows="10"
+                  cols="30"
+                  placeholder="enter your text here..."
+                />
+              </div>
+            </div>
+            <div className={style.button_row}>
+              <button className={style.cancel} onClick={backToDetails}>
+                Cancel
+              </button>
               <button className={style.submit} onClick={saveReview}>
                 Submit
               </button>

@@ -3,6 +3,23 @@
     flex-direction: column;
     color: white;
 
+    .avg_rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+
+        .star {
+            font-size: 50px;
+            color:goldenrod;
+        }
+
+        .avg {
+            color: #d9d9d9
+        }
+    }
+
     .first_row {
         display: flex;
         justify-content: space-between;
@@ -19,6 +36,10 @@
         position: relative;
         left:210px;
         bottom:20px;
+    }
+
+    .second_row {
+        margin-top: 50px;
     }
 
 }

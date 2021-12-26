@@ -1,5 +1,4 @@
 {
-      "host": "localhost",
       "port": 3000,
       "dbName": "podcasts",
       "filePath" : "data/podcasts.json",
@@ -9,15 +8,21 @@
       "isCacheEnabled": true,
       "cache": [
             {
-                  "requestUrl": "/podcast/:id(\\d+)",
+                  "requestUrl": "/podcast/:id",
                   "method": "DELETE",
-                  "cacheToClear": ["/podcast/rating/all"]
+                  "cacheToClear": [
+                        "/podcast/:id",
+                        "/podcast/rating/all"
+                  ]
 
             },
             {
-                  "requestUrl": "/podcast/:id(\\d+)",
+                  "requestUrl": "/podcast/:id",
                   "method": "PUT",
-                  "cacheToClear": ["/podcast/rating/al "]
+                  "cacheToClear": [
+                        "/podcast/:id",
+                        "/podcast/rating/all"
+                  ]
             }
       ],
       "redis": {

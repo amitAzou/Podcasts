@@ -17,18 +17,14 @@ const checkUrlToClear = async (url, method) => {
   config.cache.find((element) => {
     const regexp = pathToRegexp(element.requestUrl).exec(url)
     if (regexp && method === element.method) {
-      element.cacheToClear.forEach(async (urlToDelete) => {
-        const keys = []
-        pathToRegexp(urlToDelete, keys)
-        let stringToCmp = urlToDelete
-        keys.map((key, index) => {
-          stringToCmp = stringToCmp.replace(`:${key.name}`, regexp[index + 1])
-        })
-        if (stringToCmp === url) {
-          await cache.del(stringToCmp)
-        } else {
-          await cache.del(urlToDelete)
-        }
+      const urlParams = element.requestUrl.match(/:(.*?)($|\/)/g)
+      element.cacheToClear.forEach(async (outdatedCache) => {
+        const urlToDelete = urlParams.reduce(
+          (result, urlParam, index) =>
+            result.replace(urlParam, regexp[index + 1]),
+          outdatedCache
+        )
+        await cache.del(urlToDelete)
       })
     }
   })

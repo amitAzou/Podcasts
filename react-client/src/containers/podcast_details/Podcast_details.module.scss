@@ -56,12 +56,17 @@ body {
         margin-top: 30px;
         align-self: center;
         width: 150px;
-        background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+        background-color: #c27414;
         border-radius: 5px;
-        color: white;
-        border: 2px solid lightgray;
+        color: black;
+        border: 2px solid black;
         font-size: 18px;
         cursor: pointer;
+        padding: 3px;
+
+        &:hover{
+            background-color: #fca738;
+        }
     }
 
     .bottom_row {
