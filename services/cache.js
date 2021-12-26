@@ -1,6 +1,7 @@
 const config = require('config')
 const redis = require('redis')
-const cache = redis.createClient(config.redis)
+const url = `redis://${config.redis.host}:${config.redis.port}`
+const cache = redis.createClient({url})
 cache.connect()
 const {pathToRegexp} = require('path-to-regexp')
 
