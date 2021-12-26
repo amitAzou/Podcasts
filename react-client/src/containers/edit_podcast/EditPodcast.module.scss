@@ -20,7 +20,7 @@
   align-self: center;
   text-align: center;
   color: white;
-  font-size: 36px;
+  font-size: 48px;
   font-family: Serif, "Big Caslon", sans-serif;
 }
 
@@ -45,7 +45,7 @@
   padding-bottom: 2rem;
   background-color: black;
   height: auto;
-  width: 700px;
+  width: 70%;
   border-radius: 10px;
   box-shadow: 0 0 20px lightgray;
 }
@@ -60,11 +60,9 @@
   order: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: relative;
-  align-self: center;
-  text-align: center;
 }
 
 .params input {
@@ -101,8 +99,8 @@
   position: relative;
   border: none;
   cursor: pointer;
-  right: 230px;
-  bottom: 620px;
+  right: 540px;
+  bottom: 720px;
 
 
   &:after {
@@ -147,24 +145,23 @@
 }
 
 input {
-  text-align: center;
-  width: 200%;
+  width: 400%;
   height:50px;
-
 }
 
 input[value]{
-  font-size: 14px;
+  font-size: 16px;
+  text-align: left;
 }
 
 textarea {
   background-color: transparent;
   border: 2px lightgray solid;
   font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
-  width: 200%;
-  height: 100px;
+  width: 400%;
+  height: 200px;
   text-align: center;
   margin: 1rem;
 }
@@ -175,10 +172,12 @@ textarea {
 }
 
 label {
-  align-self: center;
-  color: rgba(200, 75, 49, 0.82);
+  align-self: start;
+  color: #eb9d38;
   font-size: 16px;
   text-decoration: underline;
   font-weight: bold;
+  position: relative;
+  right:330px;
 }
 
