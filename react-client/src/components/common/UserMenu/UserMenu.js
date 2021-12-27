@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from 'react'
 import style from './UserMenu.module.scss'
-import {Link, useNavigate} from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 
 const UserMenu = () => {
   const navigate = useNavigate()
   const [username, setUsername] = useState('')
   const [logStatus, setLogStatus] = useState(false)
+  const location = useLocation()
 
   const logout = () => {
     if (logStatus === true) {
       localStorage.clear()
       getUserName()
-      navigate('/podcast')
       window.location.reload()
     } else {
+      localStorage.setItem('lastPage', location.pathname)
       navigate('/admin')
     }
   }

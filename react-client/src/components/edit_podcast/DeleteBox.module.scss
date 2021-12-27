@@ -1,14 +1,15 @@
 .delete_box {
   display: flex;
   flex-direction: column;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: #868686;
   border-radius: 5px;
   justify-content: space-around;
-  position: absolute;
-  right:45px;
-  top:10px;
+  align-self: center;
+  position: relative;
+  bottom:120px;
+  right:80px;
 
   p {
     font-size: 12px;

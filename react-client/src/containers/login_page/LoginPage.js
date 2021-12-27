@@ -27,7 +27,7 @@ const LoginPage = () => {
       const token = await getToken(credentials)
       localStorage.setItem('token', token)
       localStorage.setItem('username', credentials.username)
-      navigate('/podcast')
+      navigate(localStorage.getItem('lastPage'))
     } catch (err) {
       setLoginSuccessStatus(true)
       console.error(err)

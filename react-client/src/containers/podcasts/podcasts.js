@@ -14,11 +14,13 @@ import {authenticate} from '../../services/authentication'
 const Podcasts = () => {
   const [podcasts, setPodcasts] = useState([])
   const [isLoggedIn, setLoggedIn] = useState(false)
+  const [isLoaded, setLoaded] = useState(false)
 
   async function setData() {
     try {
       const data = await getPodcastsByRating()
       setPodcasts(data)
+      setLoaded(true)
     } catch (err) {
       setPodcasts([])
       console.error(err)
@@ -58,17 +60,21 @@ const Podcasts = () => {
           )}
         </div>
         <div className={style.card_container}>
-          {podcasts.map((podcastItem) => {
-            return (
-              <PodcastCard
-                key={podcastItem.id}
-                id={podcastItem.id}
-                title={podcastItem.title}
-                imageUrl={podcastItem.imageUrl}
-                description={podcastItem.description}
-              />
-            )
-          })}
+          {isLoaded ? (
+            podcasts.map((podcastItem) => {
+              return (
+                <PodcastCard
+                  key={podcastItem.id}
+                  id={podcastItem.id}
+                  title={podcastItem.title}
+                  imageUrl={podcastItem.imageUrl}
+                  description={podcastItem.description}
+                />
+              )
+            })
+          ) : (
+            <div className={style.loading}>Loading Podcasts...</div>
+          )}
         </div>
       </div>
       <div className={style.fourth_row}>

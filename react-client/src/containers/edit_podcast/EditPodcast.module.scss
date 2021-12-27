@@ -6,6 +6,7 @@
   align-content: center;
 }
 
+
 .top_row {
   display: flex;
   justify-content: space-between;
@@ -75,53 +76,6 @@
   font-size: 18px;
 }
 
-
-.delete_text {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the delete podcast text */
-  position: absolute;
-  right: 35px;
-  top: 10px;
-}
-
-
-.delete {
-  height: 50px;
-  width: 50px;
-  background: transparent;
-  position: relative;
-  border: none;
-  cursor: pointer;
-  right: 540px;
-  bottom: 720px;
-
-
-  &:after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    content: "\d7";
-    font-size: 50px;
-    color: #830707;
-    text-align: center;
-  }
-
-  &:hover {
-    .delete_text {
-      visibility: visible;
-    }
-  }
-}
-
 .action {
   position: relative;
   order: 2;
@@ -131,25 +85,36 @@
   justify-content: center;
   padding-bottom: 20px;
 
-  .submit {
-    background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
-    color: #fff;
+  button {
     border-radius: 5px;
     align-self: center;
-    width: 100px;
+    width: 120px;
     margin: 5px;
     border: 2px solid lightgray;
     font-size: 18px;
     cursor: pointer;
+    height: 30px;
+
+    &.submit {
+      background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+      color: #fff;
+    }
+
+    &.delete {
+      background-image: linear-gradient(160deg, #8c2121 100%, #fff 0%);
+      color: #fff;
+    }
   }
+
 }
 
 input {
-  width: 400%;
+  width: 800px;
   height:50px;
 }
 
 input[value]{
+  padding-left: 20px;
   font-size: 16px;
   text-align: left;
 }
@@ -160,10 +125,10 @@ textarea {
   font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
   font-size: 16px;
   color: white;
-  width: 400%;
+  width: 800px;
   height: 200px;
-  text-align: center;
   margin: 1rem;
+  padding-left: 20px;
 }
 
 .third_row {
@@ -178,6 +143,14 @@ label {
   text-decoration: underline;
   font-weight: bold;
   position: relative;
-  right:330px;
+  left:20px;
+}
+
+.bottom_row {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+
+
 }
 

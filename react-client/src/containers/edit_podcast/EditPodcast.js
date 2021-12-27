@@ -78,16 +78,6 @@ const EditPodcast = () => {
       </div>
       <div className={style.second_row}>
         <div className={style.form_box}>
-          <div className={style.pod_info}>
-            <div>
-              {isLoggedIn ? (
-                <div className={style.delete} onClick={showDeleteBox}>
-                  {showDelete ? <DeleteBox key={id} id={id} /> : null}
-                  <span className={style.delete_text}>Delete Podcast</span>
-                </div>
-              ) : null}
-            </div>
-          </div>
           <div className={style.params}>
             <label>Title</label>
             <input
@@ -167,10 +157,20 @@ const EditPodcast = () => {
               name="category"
               value={podcastDetails.category}
             />
-            <div className={style.action}>
-              <button className={style.submit} onClick={savePodcast}>
-                Submit
-              </button>
+            <div className={style.bottom_row}>
+              <div className={style.action}>
+                {isLoggedIn ? (
+                  <button className={style.delete} onClick={showDeleteBox}>
+                    {showDelete ? <DeleteBox key={id} id={id} /> : null}
+                    Delete
+                  </button>
+                ) : null}
+              </div>
+              <div className={style.action}>
+                <button className={style.submit} onClick={savePodcast}>
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
