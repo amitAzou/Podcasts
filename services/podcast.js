@@ -1,5 +1,13 @@
-const { getPodcastFromDataBase, getSortedDataFromDataBase, addPodcastToDataBase, updateDataBase, deleteFromDataBase, searchPodcastInDataBase } = require('../ models/podcastDataBaseModel')
-const { getReviewsArr } = require('../ models/reviewsDataBaseModel')
+const {
+  getPodcastFromDataBase,
+  getSortedDataFromDataBase,
+  addPodcastToDataBase,
+  updateDataBase,
+  deleteFromDataBase,
+  searchPodcastInDataBase,
+  saveItemToS3,
+} = require('../ models/podcastDataBaseModel')
+const {getReviewsArr} = require('../ models/reviewsDataBaseModel')
 
 const getItem = async (id) => {
   return getPodcastFromDataBase(id)
@@ -45,15 +53,24 @@ const getRatingsArr = async (data) => {
       const tempRatingObj = ratingMap.get(tempId)
       const tempSum = tempRatingObj.sum
       const tempCounter = tempRatingObj.counter
-      ratingMap.set(tempId, { sum: tempSum + data[i].rating, counter: tempCounter + 1 })
+      ratingMap.set(tempId, {
+        sum: tempSum + data[i].rating,
+        counter: tempCounter + 1,
+      })
     } else {
-      ratingMap.set(tempId, { sum: data[i].rating, counter: 1 })
+      ratingMap.set(tempId, {sum: data[i].rating, counter: 1})
     }
   }
   ratingMap.forEach((value) => {
     value.avg = value.sum / value.counter
   })
   return [...ratingMap.entries()].sort((a, b) => b[1].avg - a[1].avg)
+}
+
+const getBestPodcast = async (number) => {
+  const sortedPodcasts = await getSortedPodcastByRating()
+  const result = sortedPodcasts.slice(0, number)
+  return await saveItemToS3(result)
 }
 
 module.exports = {
@@ -64,5 +81,6 @@ module.exports = {
   deleteData,
   searchItem,
   getSortedPodcastByRating,
-  getRatingsArr
+  getRatingsArr,
+  getBestPodcast,
 }
