@@ -41,7 +41,7 @@
     padding-bottom: 2rem;
     background-color: black;
     height: auto;
-    width: 1000px;
+    width: 70%;
     border-radius: 10px;
     box-shadow: 0 0 20px lightgray;
 
@@ -59,7 +59,11 @@
         margin: 15px;
         font-size: 18px;
         text-align: center;
-        width: 50%;
+        width: 65%;
+
+        &::placeholder{
+          color:white;
+        }
       }
       textarea {
         background-color: transparent;
@@ -67,10 +71,14 @@
         font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
         font-size: 18px;
         color: white;
-        width: 50%;
-        height: 100px;
+        width: 64%;
+        height: 150px;
         text-align: center;
         margin: 1rem;
+
+        &::placeholder{
+          color:white;
+        }
       }
     }
 
@@ -88,6 +96,7 @@
         font-size: 18px;
         padding: 0 2rem;
         cursor:pointer;
+        width: 200px;
       }
 
     }

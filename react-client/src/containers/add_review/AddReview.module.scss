@@ -62,7 +62,7 @@
         }
 
         .headline {
-          color: white;
+          color: #eb9d31;
           font-size: 20px;
           text-decoration: underline;
         }
@@ -76,7 +76,7 @@
           margin: 15px;
           font-size: 18px;
           text-align: center;
-          width:200px;
+          width:150%;
         }
 
         textarea {
@@ -109,7 +109,7 @@
       border-radius: 5px;
       border: 2px solid lightgray;
       font-size: 18px;
-      width:200px;
+      width:150px;
       cursor: pointer;
       margin: 0 10px;
 
@@ -119,7 +119,7 @@
       }
 
       &.cancel {
-        background-image: linear-gradient(160deg, #6c1212 100%, #fff 0%);
+        background-image: linear-gradient(160deg, #8c2121 100%, #fff 0%);
       }
 
       &:hover {

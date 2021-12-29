@@ -41,7 +41,8 @@ const AddReview = () => {
       navigate(`/podcast/${id}`)
     } catch (err) {
       console.error(err)
-      navigate(`/reviews/add-review/${id}`)
+      navigate(location.pathname)
+      window.alert(err)
     }
   }
 
@@ -73,13 +74,13 @@ const AddReview = () => {
           <div className={style.review_box}>
             <div className={style.params}>
               <div className={style.param_component}>
-                <h2 className={style.headline}>Rate The podcast:</h2>
+                <h2 className={style.headline}>Rate Us:</h2>
                 <input
                   onKeyDown={handleEnter}
                   onChange={handleChange}
                   name="rating"
                   type="number"
-                  placeholder="rating"
+                  placeholder="Enter a number between 1-10"
                 />
               </div>
               <div className={style.param_component}>
@@ -90,7 +91,7 @@ const AddReview = () => {
                   name="text"
                   rows="10"
                   cols="30"
-                  placeholder="enter your text here..."
+                  placeholder="Enter your text here..."
                 />
               </div>
             </div>

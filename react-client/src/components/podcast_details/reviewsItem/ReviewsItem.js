@@ -32,8 +32,12 @@ const ReviewsItem = () => {
       rating += singleReview.rating
       counter++
     })
-    const avgRating = Math.round((rating / counter) * 10) / 10
-    setAvgRating(avgRating.toFixed(1))
+    if (counter === 0) {
+      setAvgRating(0)
+    } else {
+      const avgRating = Math.round((rating / counter) * 10) / 10
+      setAvgRating(avgRating.toFixed(1))
+    }
   }
 
   useEffect(() => {

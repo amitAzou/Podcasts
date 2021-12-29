@@ -58,6 +58,7 @@ const EditPodcast = () => {
     } catch (err) {
       console.error(err)
       navigate(`/podcast/edit-podcast/${id}`)
+      window.alert(err)
     }
   }
 
