@@ -12,7 +12,9 @@
                   "method": "DELETE",
                   "cacheToClear": [
                         "/podcast/:id",
-                        "/podcast/rating/all"
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
                   ]
 
             },
@@ -21,7 +23,26 @@
                   "method": "PUT",
                   "cacheToClear": [
                         "/podcast/:id",
-                        "/podcast/rating/all"
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
+                  ]
+            },
+            {
+                  "requestUrl": "/podcast/new",
+                  "method": "POST",
+                  "cacheToClear": [
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
+                  ]
+            },
+            {
+                  "requestUrl": "/reviews/new",
+                  "method": "POST",
+                  "cacheToClear": [
+                        "/podcast/rating/all",
+                        "/reviews/get-by-podcast/:id"
                   ]
             }
       ],

@@ -6,16 +6,20 @@ const connection = mysql.createConnection({
   user: config.db.user,
   password: config.db.password,
   database: 'podcasts',
-  port: config.db.port
+  port: config.db.port,
 })
 
-function runQuery (query, parameters = []) {
+connection.connect()
+
+function runQuery(query, parameters = []) {
   return new Promise((resolve, reject) => {
     connection.query(query, parameters, (error, results) => {
-      if (error) { reject(error) }
+      if (error) {
+        reject(error)
+      }
       resolve(results)
     })
   })
 }
 
-module.exports = { runQuery }
+module.exports = {runQuery}
