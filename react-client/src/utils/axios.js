@@ -16,7 +16,7 @@ axios.interceptors.response.use(
   (error) => {
     if (error.response.status === 401) {
       console.error(error)
-      window.location.href = '/login'
+      window.location.href = '/podcast'
     } else {
       console.error(error.response.status)
       return Promise.reject(error)

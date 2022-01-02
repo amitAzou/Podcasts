@@ -53,6 +53,12 @@ const PodcastItem = () => {
           <p className={style.data}>{podcast.numberOfEpisodes}</p>
         </div>
         <div className={style.single_element}>
+          <p className={style.head}>Average Episode Length: </p>
+          <p className={style.data}>
+            {parseInt(podcast.avgEpisodeLength / 60)}m
+          </p>
+        </div>
+        <div className={style.single_element}>
           <p className={style.head}>Author: </p>
           <p className={style.data}>{podcast.author}</p>
         </div>

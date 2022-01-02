@@ -8,16 +8,19 @@ import UserMenu from '../../components/common/UserMenu/UserMenu'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
 import AddButton from '../../components/common/AddButton/AddButton'
 import logo from '../../images/mic_logo.png'
-import {Link, useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import {authenticate} from '../../services/authentication'
 
 const Podcasts = () => {
   const [podcasts, setPodcasts] = useState([])
-  const navigate = useNavigate()
+  const [isLoggedIn, setLoggedIn] = useState(false)
+  const [isLoaded, setLoaded] = useState(false)
 
   async function setData() {
     try {
       const data = await getPodcastsByRating()
       setPodcasts(data)
+      setLoaded(true)
     } catch (err) {
       setPodcasts([])
       console.error(err)
@@ -25,11 +28,8 @@ const Podcasts = () => {
   }
 
   useEffect(() => {
-    if (!localStorage.getItem('token')) {
-      navigate('/login')
-    } else {
-      setData()
-    }
+    authenticate(setLoggedIn)
+    setData()
   }, [])
 
   return (
@@ -51,22 +51,30 @@ const Podcasts = () => {
       </div>
       <div className={style.third_row}>
         <div className={style.add_button}>
-          <Link to={{pathname: '/podcast/add'}}>
-            <AddButton text={'Add Podcast'} />
-          </Link>
+          {isLoggedIn ? (
+            <Link to={{pathname: '/podcast/add'}}>
+              <AddButton text={'Add Podcast'} />
+            </Link>
+          ) : (
+            <br />
+          )}
         </div>
         <div className={style.card_container}>
-          {podcasts.map((podcastItem) => {
-            return (
-              <PodcastCard
-                key={podcastItem.id}
-                id={podcastItem.id}
-                title={podcastItem.title}
-                imageUrl={podcastItem.imageUrl}
-                description={podcastItem.description}
-              />
-            )
-          })}
+          {isLoaded ? (
+            podcasts.map((podcastItem) => {
+              return (
+                <PodcastCard
+                  key={podcastItem.id}
+                  id={podcastItem.id}
+                  title={podcastItem.title}
+                  imageUrl={podcastItem.imageUrl}
+                  description={podcastItem.description}
+                />
+              )
+            })
+          ) : (
+            <div className={style.loading}>Loading Podcasts...</div>
+          )}
         </div>
       </div>
       <div className={style.fourth_row}>

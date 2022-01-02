@@ -6,17 +6,19 @@ import {useLocation, useNavigate} from 'react-router-dom'
 import {editPodcast, getPodcast} from '../../services/podcasts'
 import CopyRight from '../../components/common/CopyRight/CopyRight'
 import DeleteBox from '../../components/edit_podcast/DeleteBox'
+import {authenticate} from '../../services/authentication'
 
 const EditPodcast = () => {
   const [podcastDetails, setPodcastDetails] = useState({})
   const [showDelete, setDelete] = useState(false)
+  const [isLoggedIn, setLoggedIn] = useState(false)
   const navigate = useNavigate()
 
   const location = useLocation()
   const id = location.pathname.replace('/podcast/edit-podcast/', '')
 
   const showDeleteBox = () => {
-    if (showDelete === false) {
+    if (!showDelete) {
       setDelete(true)
     } else {
       setDelete(false)
@@ -34,11 +36,8 @@ const EditPodcast = () => {
   }
 
   useEffect(() => {
-    if (!localStorage.getItem('token')) {
-      navigate('/login')
-    } else {
-      setInitialDetails()
-    }
+    setInitialDetails()
+    authenticate(setLoggedIn)
   }, [])
 
   const handleChange = (event) => {
@@ -59,6 +58,7 @@ const EditPodcast = () => {
     } catch (err) {
       console.error(err)
       navigate(`/podcast/edit-podcast/${id}`)
+      window.alert(err)
     }
   }
 
@@ -79,85 +79,99 @@ const EditPodcast = () => {
       </div>
       <div className={style.second_row}>
         <div className={style.form_box}>
-          <div className={style.pod_info}>
-            <div className={style.delete} onClick={showDeleteBox}>
-              {showDelete ? <DeleteBox key={id} id={id} /> : null}
-              <span className={style.delete_text}>Delete Podcast</span>
-            </div>
-          </div>
           <div className={style.params}>
+            <label>Title</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               name="title"
-              placeholder="Title"
+              value={podcastDetails.title}
             />
+            <label>Description</label>
             <textarea
               onKeyDown={handleEnter}
               onChange={handleChange}
               name="description"
-              placeholder="Description"
+              value={podcastDetails.description}
             />
+            <label>Html Description</label>
             <textarea
               onKeyDown={handleEnter}
               onChange={handleChange}
               name="htmlDescription"
-              placeholder="Html Description"
+              value={podcastDetails.htmlDescription}
             />
+            <label>Web Url</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               name="webUrl"
-              placeholder="Web Url"
+              value={podcastDetails.webUrl}
             />
+            <label>Image Url</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               id="imageUrl"
-              placeholder="Image Url"
+              value={podcastDetails.imageUrl}
             />
+            <label>Language</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               name="language"
-              placeholder="Language"
+              value={podcastDetails.language}
             />
+            <label>Number Of Episodes</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="number"
               id="numOfEpisodes"
-              placeholder="Number Of Episodes"
+              value={podcastDetails.numberOfEpisodes}
             />
+            <label>Avg Episode Length</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="number"
               name="avgEpisodeLength"
-              placeholder="Avg Episode Length"
+              value={podcastDetails.avgEpisodeLength}
             />
+            <label>Author</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               name="author"
-              placeholder="Author"
+              value={podcastDetails.author}
             />
+            <label>Category</label>
             <input
               onKeyDown={handleEnter}
               onChange={handleChange}
               type="text"
               name="category"
-              placeholder="Category"
+              value={podcastDetails.category}
             />
-            <div className={style.action}>
-              <button className={style.submit} onClick={savePodcast}>
-                Submit
-              </button>
+            <div className={style.bottom_row}>
+              <div className={style.action}>
+                {isLoggedIn ? (
+                  <button className={style.delete} onClick={showDeleteBox}>
+                    {showDelete ? <DeleteBox key={id} id={id} /> : null}
+                    Delete
+                  </button>
+                ) : null}
+              </div>
+              <div className={style.action}>
+                <button className={style.submit} onClick={savePodcast}>
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>

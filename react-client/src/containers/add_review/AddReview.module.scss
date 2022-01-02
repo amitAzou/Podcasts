@@ -18,6 +18,7 @@
     text-align: center;
     color: white;
     font-size: 36px;
+    font-family: Serif, "Big Caslon", sans-serif;
   }
 
   .user_menu {
@@ -40,8 +41,8 @@
       padding-top: 2rem;
       padding-bottom: 2rem;
       background-color: black;
-      height: 300px;
-      width: 500px;
+      height: 500px;
+      width: 60%;
       border-radius: 10px;
       box-shadow: 0 0 20px lightgray;
 
@@ -52,8 +53,19 @@
         align-self: center;
         text-align: center;
         align-items: center;
-        height: 300px;
-        width: 300px;
+
+        .param_component {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .headline {
+          color: #eb9d31;
+          font-size: 20px;
+          text-decoration: underline;
+        }
 
         input {
           background: none;
@@ -64,20 +76,8 @@
           margin: 15px;
           font-size: 18px;
           text-align: center;
-          width:200px;
+          width:150%;
         }
-
-        .submit {
-          position: relative;
-          background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
-          color: #fff;
-          border-radius: 5px;
-          border: 2px solid lightgray;
-          font-size: 18px;
-          width:200px;
-          cursor: pointer;
-        }
-
 
         textarea {
           background-color: transparent;
@@ -85,8 +85,8 @@
           font-family: "Helvetica Neue", Halvetica, Arial, sans-serif;
           font-size: 18px;
           color: white;
-          width: 200px;
-          height:150px;
+          width: 150%;
+          height:200px;
         }
 
         ::placeholder {
@@ -96,6 +96,37 @@
 
       }
     }
+  }
+
+  .button_row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    button {
+      position: relative;
+      color: #fff;
+      border-radius: 5px;
+      border: 2px solid lightgray;
+      font-size: 18px;
+      width:150px;
+      cursor: pointer;
+      margin: 0 10px;
+
+      &.submit {
+        position: relative;
+        background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+      }
+
+      &.cancel {
+        background-image: linear-gradient(160deg, #8c2121 100%, #fff 0%);
+      }
+
+      &:hover {
+        background-image: linear-gradient(160deg, rgba(72, 71, 71, 0.15) 100%, #ffffff 0%);
+      }
+    }
+
   }
 
 .third_row {

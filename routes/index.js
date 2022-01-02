@@ -4,7 +4,7 @@ const podcasts = require('./podcast')
 const reviews = require('./reviews')
 const login = require('./login')
 
-router.use('/podcast', podcasts)
+router.use('/podcast/', podcasts)
 router.use('/reviews', reviews)
 router.use('/login', login)
 

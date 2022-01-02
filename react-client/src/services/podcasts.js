@@ -2,8 +2,13 @@ import axios from 'axios'
 
 export const getPodcastsByRating = () =>
   axios.get('/podcast/rating/all').then(({data}) => data)
-export const searchPodcasts = (query) =>
-  axios.get(`/podcast/search/database/${query}`).then(({data}) => data)
+export const searchPodcasts = (string) => {
+  const filteredString = string.replaceAll('/', '')
+  console.log('filteredString', filteredString)
+  return axios
+    .get(`/podcast/search/database/${filteredString}`)
+    .then(({data}) => data)
+}
 export const getPodcast = (id) =>
   axios.get(`/podcast/${id}`).then(({data}) => data)
 export const getReviews = (id) =>

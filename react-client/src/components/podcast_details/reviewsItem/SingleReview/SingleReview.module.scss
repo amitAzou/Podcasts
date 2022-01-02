@@ -9,18 +9,19 @@
     flex-direction: column;
     justify-content: center;
 
+    .star {
+      font-size: 30px;
+      color: goldenrod;
+    }
+
     p {
       font-size: 14px;
     }
 
-    .head {
-      text-decoration: underline;
-      font-weight: bold;
-    }
 
     .data {
       margin-left: 1em;
-      color: #eb9d31
+      color: #d9d9d9
     }
 
   }

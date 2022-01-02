@@ -18,7 +18,8 @@ body {
         align-self: center;
         text-align: center;
         color: white;
-        font-size:36px;
+        font-size:48px;
+        font-family: Serif, "Big Caslon", sans-serif;
     }
 
     .user_menu {
@@ -34,7 +35,7 @@ body {
     }
 
     .box_layout {
-        margin-top: 50px;
+        margin-top: 40px;
         margin-left: 20px;
         position: relative;
         display: flex;
@@ -55,14 +56,24 @@ body {
         margin-top: 30px;
         align-self: center;
         width: 150px;
-        background-image: linear-gradient(160deg, #028509 100%, #fff 0%);
+        background-color: #c27414;
         border-radius: 5px;
-        color: white;
-        border: 2px solid lightgray;
+        color: black;
+        border: 2px solid black;
         font-size: 18px;
         cursor: pointer;
+        padding: 3px;
+
+        &:hover{
+            background-color: #fca738;
+        }
     }
 
+    .bottom_row {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 

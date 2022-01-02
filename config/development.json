@@ -1,12 +1,51 @@
 {
-      "host": "localhost",
       "port": 3000,
       "dbName": "podcasts",
       "filePath" : "data/podcasts.json",
       "reviewsPath": "data/reviews.json",
       "cacheExpiration": 1200,
-      "isCacheEnabled": false,
       "static": "react-client/src",
+      "isCacheEnabled": true,
+      "cache": [
+            {
+                  "requestUrl": "/podcast/:id",
+                  "method": "DELETE",
+                  "cacheToClear": [
+                        "/podcast/:id",
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
+                  ]
+
+            },
+            {
+                  "requestUrl": "/podcast/:id",
+                  "method": "PUT",
+                  "cacheToClear": [
+                        "/podcast/:id",
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
+                  ]
+            },
+            {
+                  "requestUrl": "/podcast/new",
+                  "method": "POST",
+                  "cacheToClear": [
+                        "/podcast/rating/all",
+                        "/podcast/search/database/:query",
+                        "/podcast/search/database/"
+                  ]
+            },
+            {
+                  "requestUrl": "/reviews/new",
+                  "method": "POST",
+                  "cacheToClear": [
+                        "/podcast/rating/all",
+                        "/reviews/get-by-podcast/:id"
+                  ]
+            }
+      ],
       "redis": {
             "host": "localhost",
             "port": 6379
@@ -20,7 +59,26 @@
       "authentication": {
             "isAuthenticationEnabled": true,
             "secret": "Auth-Secret",
-            "loginUrl": "/login"
+            "loginUrl": "/login",
+            "protectedUrls": [
+                  {
+                        "url": "/podcast/new",
+                        "method": "POST"
+                  },
+                  {
+                        "url": "/podcast/:id(\\d+)",
+                        "method": "DELETE"
+                  },
+                  {
+                        "url": "/podcast/:id(\\d+)",
+                        "method": "PUT"
+                  }
+            ]
+      },
+      "s3": {
+            "region": "us-west-2",
+            "folderName": "aura_bootcamp",
+            "fileName": "racheli/data",
+            "bucket": "appcloud-bi"
       }
-
 }

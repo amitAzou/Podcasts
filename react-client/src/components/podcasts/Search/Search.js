@@ -24,7 +24,7 @@ const Search = ({setPodcasts}) => {
       <input
         className={style.searchInput}
         type="search"
-        placeholder="search a podcast..."
+        placeholder="search a podcast by name/author..."
         onChange={(e) => setSearchValue(e.target.value)}
       />
     </div>
